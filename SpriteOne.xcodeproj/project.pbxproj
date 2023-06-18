@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E552DE2B2A3DE32C0079D370 /* cyborg-ninja.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E552DE2A2A3DE32C0079D370 /* cyborg-ninja.mp3 */; };
+		E552DE2D2A3DE3E00079D370 /* explosion.wav in Resources */ = {isa = PBXBuildFile; fileRef = E552DE2C2A3DE3E00079D370 /* explosion.wav */; };
+		E552DE2F2A3DE6170079D370 /* Explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = E552DE2E2A3DE6170079D370 /* Explosion.sks */; };
+		E57CFF2C2A3CB4C900E062CE /* SpaceDust.sks in Resources */ = {isa = PBXBuildFile; fileRef = E57CFF2B2A3CB4C900E062CE /* SpaceDust.sks */; };
 		E5E2A9832A3C691200B42961 /* SpriteOneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E2A9822A3C691200B42961 /* SpriteOneApp.swift */; };
 		E5E2A9852A3C691200B42961 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E2A9842A3C691200B42961 /* ContentView.swift */; };
 		E5E2A9872A3C691200B42961 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5E2A9862A3C691200B42961 /* Assets.xcassets */; };
-		E5E2A98B2A3C691200B42961 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5E2A98A2A3C691200B42961 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E552DE2A2A3DE32C0079D370 /* cyborg-ninja.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "cyborg-ninja.mp3"; sourceTree = "<group>"; };
+		E552DE2C2A3DE3E00079D370 /* explosion.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = explosion.wav; sourceTree = "<group>"; };
+		E552DE2E2A3DE6170079D370 /* Explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Explosion.sks; sourceTree = "<group>"; };
+		E57CFF2B2A3CB4C900E062CE /* SpaceDust.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SpaceDust.sks; sourceTree = "<group>"; };
 		E5E2A97F2A3C691200B42961 /* SpriteOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpriteOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5E2A9822A3C691200B42961 /* SpriteOneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteOneApp.swift; sourceTree = "<group>"; };
 		E5E2A9842A3C691200B42961 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E5E2A9862A3C691200B42961 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5E2A9882A3C691200B42961 /* SpriteOne.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpriteOne.entitlements; sourceTree = "<group>"; };
-		E5E2A98A2A3C691200B42961 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,21 +58,16 @@
 		E5E2A9812A3C691200B42961 /* SpriteOne */ = {
 			isa = PBXGroup;
 			children = (
+				E57CFF2B2A3CB4C900E062CE /* SpaceDust.sks */,
 				E5E2A9822A3C691200B42961 /* SpriteOneApp.swift */,
 				E5E2A9842A3C691200B42961 /* ContentView.swift */,
+				E552DE2E2A3DE6170079D370 /* Explosion.sks */,
 				E5E2A9862A3C691200B42961 /* Assets.xcassets */,
 				E5E2A9882A3C691200B42961 /* SpriteOne.entitlements */,
-				E5E2A9892A3C691200B42961 /* Preview Content */,
+				E552DE2A2A3DE32C0079D370 /* cyborg-ninja.mp3 */,
+				E552DE2C2A3DE3E00079D370 /* explosion.wav */,
 			);
 			path = SpriteOne;
-			sourceTree = "<group>";
-		};
-		E5E2A9892A3C691200B42961 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				E5E2A98A2A3C691200B42961 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +128,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5E2A98B2A3C691200B42961 /* Preview Assets.xcassets in Resources */,
+				E57CFF2C2A3CB4C900E062CE /* SpaceDust.sks in Resources */,
+				E552DE2B2A3DE32C0079D370 /* cyborg-ninja.mp3 in Resources */,
+				E552DE2F2A3DE6170079D370 /* Explosion.sks in Resources */,
+				E552DE2D2A3DE3E00079D370 /* explosion.wav in Resources */,
 				E5E2A9872A3C691200B42961 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,26 +268,28 @@
 		E5E2A98F2A3C691200B42961 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = SpriteOne/SpriteOne.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SpriteOne/Preview Content\"";
 				DEVELOPMENT_TEAM = UCV96WLDG4;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SpriteOne;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.kids-games";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeRight;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -291,8 +297,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = top.mightycounty.SpriteOne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -302,26 +311,28 @@
 		E5E2A9902A3C691200B42961 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = SpriteOne/SpriteOne.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SpriteOne/Preview Content\"";
 				DEVELOPMENT_TEAM = UCV96WLDG4;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SpriteOne;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.kids-games";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeRight;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -329,8 +340,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = top.mightycounty.SpriteOne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
