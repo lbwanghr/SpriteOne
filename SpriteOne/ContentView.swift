@@ -9,34 +9,35 @@ import SwiftUI
 import SpriteKit
 
 struct ContentView: View {
-    var scene: SKScene {
-        let scene = GameScene()
-        scene.size = CGSize(width: 1024, height: 768)
-        scene.scaleMode = .fill
-        return scene
-    }
+    
     var body: some View {
-        SpriteView(scene: scene, debugOptions: [.showsFPS, .showsNodeCount])
-            .ignoresSafeArea()
+        
+        #if os(macOS)
+        SpriteView(scene: GameScene(), debugOptions: [.showsFPS, .showsNodeCount])
+                .frame(minWidth: 512, maxWidth: 1024, minHeight: 384, maxHeight: 768)
+        #elseif os(iOS)
+        SpriteView(scene: GameScene(), debugOptions: [.showsFPS, .showsNodeCount])
+                .ignoresSafeArea()
+        #endif
         
         
     }
 }
 
+@available(iOS 17.0, macOS 14.0, tvOS 17.0, watchOS 10.0, *)
 #Preview {
     ContentView()
 }
 
+
+
 class GameScene: SKScene {
-    
-    let player = SKSpriteNode(imageNamed: "player-rocket")
     
     var touchingPlayer = false
     var lastLocation = CGPoint()
     
     var timer: Timer?
     
-    let scoreLabel = SKLabelNode(fontNamed: "AvenirNextCondensed-Bold")
     var score = 0 {
         didSet {
             scoreLabel.text = "SCORE: \(score)"
@@ -44,65 +45,70 @@ class GameScene: SKScene {
     }
     
     let music = SKAudioNode(fileNamed: "cyborg-ninja")
+    let background = SKSpriteNode(imageNamed: "space")
+    let player = SKSpriteNode(imageNamed: "player-rocket")
+    let gameOver = SKSpriteNode(imageNamed: "gameOver-1")
+    let scoreLabel = SKLabelNode(fontNamed: "AvenirNextCondensed-Bold")
+    let spaceDust = SKEmitterNode(fileNamed: "SpaceDust")!
+    let explosionSound = SKAction.playSoundFileNamed("explosion", waitForCompletion: false)
     
-    func initialization(to view: SKView) {
-        let bg = SKSpriteNode(imageNamed: "space")
-        bg.zPosition = -1
-        bg.position = CGPoint(x: 512, y: 384)
-        addChild(bg)
+    
+    override func sceneDidLoad() {
+        // Initialize scene configuration
+        self.size = CGSize(width: 960, height: 540)
+        self.anchorPoint = CGPoint(x: 0.5, y: 0.5)
+        self.scaleMode = .aspectFit
+        self.physicsWorld.contactDelegate = self
         
-        if let particles = SKEmitterNode(fileNamed: "SpaceDust") {
-            particles.position = CGPoint(x: 1024, y: 384)
-            particles.zPosition = 0
-            particles.advanceSimulationTime(10)
-            addChild(particles)
-        }
+        background.zPosition = -1
         
+        scoreLabel.zPosition = 1
+        scoreLabel.position = CGPoint(x: 300, y: 200)
+        score = 0
         
-        player.position = CGPoint(x: 0, y: 384)
-        player.zPosition = 1
+        spaceDust.zPosition = 0
+        spaceDust.position = CGPoint(x: 480, y: 0)
+        spaceDust.advanceSimulationTime(10)
+        
+        player.zPosition = 0
+        player.position = CGPoint(x: -400, y: 0)
         player.physicsBody = SKPhysicsBody(texture: player.texture!, size: player.size)
         player.physicsBody?.categoryBitMask = 1
         player.physicsBody?.affectedByGravity = false
+        
         addChild(player)
+        addChild(background)
+        background.addChild(music)
+        background.addChild(scoreLabel)
+        background.addChild(spaceDust)
         
-        timer = Timer.scheduledTimer(withTimeInterval: 1.35, repeats: true, block: { timer in
+        
+        
+        timer = Timer.scheduledTimer(withTimeInterval: 1.8, repeats: true) { timer in
             self.createEnemy()
-        })
-        physicsWorld.contactDelegate = self
-        
-        
-        scoreLabel.zPosition = 2
-        scoreLabel.position = CGPoint(x: 100, y: 200)
-        score = 0
-        addChild(scoreLabel)
-        
-        addChild(music)
+        }
     }
     
-    override func didMove(to view: SKView) {
-        initialization(to: view)
-    }
     
     override func update(_ currentTime: TimeInterval) {
         if touchingPlayer == false && player.parent != nil {
             score += 1
         }
         
-        if player.position.x > 924 {
-            player.position.x = 924
-        } else if player.position.x < 100 {
-            player.position.x = 100
+        if player.position.x > 440 {
+            player.position.x = 440
+        } else if player.position.x < -440 {
+            player.position.x = -440
         }
         
-        if player.position.y > 668 {
-            player.position.y = 668
-        } else if player.position.y < 100 {
-            player.position.y = 100
+        if player.position.y > 230 {
+            player.position.y = 230
+        } else if player.position.y < -230 {
+            player.position.y = -230
         }
         
         for node in children {
-            if node.position.x < 0 {
+            if node.position.x < -480 {
                 node.removeFromParent()
             }
         }
@@ -110,7 +116,7 @@ class GameScene: SKScene {
     
     func createEnemy() {
         let sprite = SKSpriteNode(imageNamed: "asteroid")
-        sprite.position = CGPoint(x: 1200, y: Int.random(in: 0...768))
+        sprite.position = CGPoint(x: 600, y: Int.random(in: -270..<270))
         sprite.name = "enemy"
         sprite.zPosition = 1
         sprite.physicsBody = SKPhysicsBody(texture: sprite.texture!, size: sprite.size)
@@ -166,10 +172,48 @@ class GameScene: SKScene {
         touchingPlayer = false
     }
     #endif
-    
-
 
 }
+
+extension GameScene: SKPhysicsContactDelegate {
+    
+    func didBegin(_ contact: SKPhysicsContact) {
+        guard let nodeA = contact.bodyA.node else { return }
+        guard let nodeB = contact.bodyB.node else { return }
+        if nodeA == player {
+            playerHit(nodeB)
+        }
+    }
+    
+    func playerHit(_ node: SKNode) {
+        
+        run(explosionSound)
+        music.removeFromParent()
+        
+        gameOver.zPosition = 3
+        background.addChild(gameOver)
+        
+        if let exPlayer = SKEmitterNode(fileNamed: "Explosion") {
+            exPlayer.position = player.position
+            exPlayer.zPosition = 3
+            background.addChild(exPlayer)
+        }
+        
+        if let exEnemy = SKEmitterNode(fileNamed: "Explosion") {
+            exEnemy.position = node.position
+            exEnemy.zPosition = 3
+            background.addChild(exEnemy)
+        }
+        
+        player.removeFromParent()
+        node.removeFromParent()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.view?.presentScene(GameScene())
+        }
+    }
+}
+
 
 extension CGPoint {
     static func + (p1: CGPoint, p2: CGPoint) -> CGPoint {
@@ -177,55 +221,5 @@ extension CGPoint {
     }
     static func - (p1: CGPoint, p2: CGPoint) -> CGPoint {
         return CGPoint(x: p1.x - p2.x, y: p1.y - p2.y)
-    }
-}
-
-extension GameScene: SKPhysicsContactDelegate {
-    func didBegin(_ contact: SKPhysicsContact) {
-        guard let nodeA = contact.bodyA.node else { return }
-        guard let nodeB = contact.bodyB.node else { return }
-        if nodeA == player {
-            playerHit(nodeB)
-        } else {
-            playerHit(nodeA)
-        }
-    }
-    func playerHit(_ node: SKNode) {
-        let sound = SKAction.playSoundFileNamed("explosion", waitForCompletion: false)
-        run(sound)
-        
-        music.removeFromParent()
-        
-        let gameOver = SKSpriteNode(imageNamed: "gameOver-1")
-        gameOver.zPosition = 3
-        gameOver.position = CGPoint(x: 512, y: 384)
-        addChild(gameOver)
-        
-        if let particles = SKEmitterNode(fileNamed: "Explosion") {
-            particles.position = player.position
-            particles.zPosition = 3
-            addChild(particles)
-        }
-        
-        if let particles = SKEmitterNode(fileNamed: "Explosion") {
-            particles.position = node.position
-            particles.zPosition = 3
-            addChild(particles)
-        }
-        
-        player.removeFromParent()
-        node.removeFromParent()
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            self.removeAllChildren()
-            self.initialization(to: self.view!)
-        }
-    }
-}
-
-
-struct Previews_ContentView_LibraryContent: LibraryContentProvider {
-    var views: [LibraryItem] {
-        LibraryItem(/*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/)
     }
 }
