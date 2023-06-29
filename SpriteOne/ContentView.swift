@@ -13,10 +13,10 @@ struct ContentView: View {
     var body: some View {
         
         #if os(macOS)
-        SpriteView(scene: GameScene(), debugOptions: [.showsFPS, .showsNodeCount])
+        SpriteView(scene: GameOne(), debugOptions: [.showsFPS, .showsNodeCount])
                 .frame(minWidth: 512, maxWidth: 1024, minHeight: 384, maxHeight: 768)
         #elseif os(iOS)
-        SpriteView(scene: GameScene(), debugOptions: [.showsFPS, .showsNodeCount])
+        SpriteView(scene: GameOne(), debugOptions: [.showsFPS, .showsNodeCount])
                 .ignoresSafeArea()
         #endif
         
@@ -31,7 +31,7 @@ struct ContentView: View {
 
 
 
-class GameScene: SKScene {
+class GameOne: SKScene {
     
     var touchingPlayer = false
     var lastLocation = CGPoint()
@@ -175,7 +175,7 @@ class GameScene: SKScene {
 
 }
 
-extension GameScene: SKPhysicsContactDelegate {
+extension GameOne: SKPhysicsContactDelegate {
     
     func didBegin(_ contact: SKPhysicsContact) {
         guard let nodeA = contact.bodyA.node else { return }
@@ -209,7 +209,7 @@ extension GameScene: SKPhysicsContactDelegate {
         node.removeFromParent()
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            self.view?.presentScene(GameScene())
+            self.view?.presentScene(GameOne())
         }
     }
 }
