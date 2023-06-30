@@ -10,6 +10,8 @@ import SpriteKit
 
 struct ContentView: View {
     
+    let scene = GameOne()
+    
     var body: some View {
         
         #if os(macOS)
@@ -18,6 +20,16 @@ struct ContentView: View {
         #elseif os(iOS)
         SpriteView(scene: GameOne(), debugOptions: [.showsFPS, .showsNodeCount])
                 .ignoresSafeArea()
+        #elseif os(watchOS)
+        
+        VStack {
+            SpriteView(scene: scene)
+                    .ignoresSafeArea()
+            Button("Move") {
+                scene.doWatchThing()
+            }
+        }
+
         #endif
         
         
@@ -172,6 +184,14 @@ class GameOne: SKScene {
         touchingPlayer = false
     }
     #endif
+    
+    #if os(watchOS)
+    // no guesture
+    func doWatchThing() {
+        player.physicsBody?.velocity = CGVector(dx: 20, dy: 0)
+    }
+    #endif
+        
 
 }
 
@@ -209,7 +229,7 @@ extension GameOne: SKPhysicsContactDelegate {
         node.removeFromParent()
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            self.view?.presentScene(GameOne())
+            //self.view?.presentScene(GameOne())
         }
     }
 }
