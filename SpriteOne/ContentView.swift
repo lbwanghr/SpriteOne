@@ -10,6 +10,8 @@ import SpriteKit
 
 struct ContentView: View {
     
+    let scene = GameOne()
+    
     var body: some View {
         
         #if os(macOS)
@@ -18,6 +20,31 @@ struct ContentView: View {
         #elseif os(iOS)
         SpriteView(scene: GameOne(), debugOptions: [.showsFPS, .showsNodeCount])
                 .ignoresSafeArea()
+        #elseif os(watchOS)
+        
+        VStack {
+            SpriteView(scene: scene)
+                    .ignoresSafeArea()
+            
+            HStack {
+                let btnInfo = [
+                    ("arrow.right", CGVector(dx: 20, dy: 0)),
+                    ("arrow.left", CGVector(dx: -20, dy: 0)),
+                    ("arrow.up", CGVector(dx: 0, dy: 20)),
+                    ("arrow.down", CGVector(dx: 0, dy: -20))
+                ]
+
+                ForEach(btnInfo, id:\.self.0) { (str, vec) in
+                    Button {
+                        scene.doWatchThing(vector: vec)
+                    } label: {
+                        Image(systemName: str)
+                    }
+                }
+                
+            }
+        }
+
         #endif
         
         
@@ -172,6 +199,14 @@ class GameOne: SKScene {
         touchingPlayer = false
     }
     #endif
+    
+    #if os(watchOS)
+    // no guesture
+    func doWatchThing(vector: CGVector) {
+        player.physicsBody?.velocity = vector
+    }
+    #endif
+        
 
 }
 
@@ -209,7 +244,9 @@ extension GameOne: SKPhysicsContactDelegate {
         node.removeFromParent()
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            self.view?.presentScene(GameOne())
+            self.removeAllChildren()
+            self.background.removeAllChildren()
+            self.sceneDidLoad()
         }
     }
 }
