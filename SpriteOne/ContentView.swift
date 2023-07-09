@@ -7,6 +7,10 @@
 
 import SwiftUI
 import SpriteKit
+import CoreMotion
+#if !os(watchOS)
+import WebKit
+#endif
 
 struct ContentView: View {
     
@@ -20,6 +24,7 @@ struct ContentView: View {
         #elseif os(iOS)
         SpriteView(scene: GameOne(), debugOptions: [.showsFPS, .showsNodeCount])
                 .ignoresSafeArea()
+        //WebView()
         #elseif os(watchOS)
         
         VStack {
@@ -43,6 +48,8 @@ struct ContentView: View {
                 }
                 
             }
+            
+            
         }
 
         #endif
@@ -79,6 +86,9 @@ class GameOne: SKScene {
     let spaceDust = SKEmitterNode(fileNamed: "SpaceDust")!
     let explosionSound = SKAction.playSoundFileNamed("explosion", waitForCompletion: false)
     
+    #if os(iOS)
+    let manager = CMMotionManager()
+    #endif
     
     override func sceneDidLoad() {
         // Initialize scene configuration
@@ -109,11 +119,13 @@ class GameOne: SKScene {
         background.addChild(scoreLabel)
         background.addChild(spaceDust)
         
-        
-        
         timer = Timer.scheduledTimer(withTimeInterval: 1.8, repeats: true) { timer in
             self.createEnemy()
         }
+        
+        #if os(iOS)
+        manager.startAccelerometerUpdates()
+        #endif
     }
     
     
@@ -134,11 +146,20 @@ class GameOne: SKScene {
             player.position.y = -230
         }
         
-        for node in children {
+        for node in background.children {
             if node.position.x < -480 {
                 node.removeFromParent()
             }
         }
+        
+        #if os(iOS)
+        if let accelerometerData = manager.accelerometerData {
+            let dx = CGFloat(accelerometerData.acceleration.y) * 100
+            let dy = CGFloat(accelerometerData.acceleration.x) * 100
+            player.position.x -= dx
+            player.position.y += dy
+        }
+        #endif
     }
     
     func createEnemy() {
@@ -152,7 +173,7 @@ class GameOne: SKScene {
         sprite.physicsBody?.affectedByGravity = false
         sprite.physicsBody?.contactTestBitMask = 1
         sprite.physicsBody?.categoryBitMask = 0
-        addChild(sprite)
+        self.background.addChild(sprite)
     }
     
 
@@ -217,6 +238,8 @@ extension GameOne: SKPhysicsContactDelegate {
         guard let nodeB = contact.bodyB.node else { return }
         if nodeA == player {
             playerHit(nodeB)
+        } else if nodeB == player {
+            playerHit(nodeA)
         }
     }
     
@@ -226,6 +249,7 @@ extension GameOne: SKPhysicsContactDelegate {
         music.removeFromParent()
         
         gameOver.zPosition = 3
+        gameOver.run(.sequence([.wait(forDuration: 1, withRange: 1), .removeFromParent()]))
         background.addChild(gameOver)
         
         if let exPlayer = SKEmitterNode(fileNamed: "Explosion") {
@@ -244,6 +268,7 @@ extension GameOne: SKPhysicsContactDelegate {
         node.removeFromParent()
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.timer?.invalidate()
             self.removeAllChildren()
             self.background.removeAllChildren()
             self.sceneDidLoad()
@@ -260,3 +285,14 @@ extension CGPoint {
         return CGPoint(x: p1.x - p2.x, y: p1.y - p2.y)
     }
 }
+#if os(iOS)
+struct WebView: UIViewRepresentable {
+    let url: URL = URL(string: "https://mightycounty.top")!
+    func makeUIView(context: Context) -> WKWebView {
+        return WKWebView()
+    }
+    func updateUIView(_ uiView: WKWebView, context: Context) {
+        uiView.load(URLRequest(url: url))
+    }
+}
+#endif

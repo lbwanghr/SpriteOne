@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E5354E192A5721120049B870 /* animation0App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5354E182A5721120049B870 /* animation0App.swift */; };
+		E5354E1B2A5721120049B870 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5354E1A2A5721120049B870 /* ContentView.swift */; };
+		E5354E1D2A5721130049B870 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5354E1C2A5721130049B870 /* Assets.xcassets */; };
 		E552DE2B2A3DE32C0079D370 /* cyborg-ninja.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E552DE2A2A3DE32C0079D370 /* cyborg-ninja.mp3 */; };
 		E552DE2D2A3DE3E00079D370 /* explosion.wav in Resources */ = {isa = PBXBuildFile; fileRef = E552DE2C2A3DE3E00079D370 /* explosion.wav */; };
 		E552DE2F2A3DE6170079D370 /* Explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = E552DE2E2A3DE6170079D370 /* Explosion.sks */; };
@@ -22,6 +25,14 @@
 		E5AD0F852A4E5F3700A14FE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5E2A9862A3C691200B42961 /* Assets.xcassets */; };
 		E5E2A9832A3C691200B42961 /* SpriteOneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E2A9822A3C691200B42961 /* SpriteOneApp.swift */; };
 		E5E2A9852A3C691200B42961 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E2A9842A3C691200B42961 /* ContentView.swift */; };
+		E5EC6F7B2A5ACFB200DCBD8F /* SpriteTwoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EC6F7A2A5ACFB200DCBD8F /* SpriteTwoApp.swift */; };
+		E5EC6F7D2A5ACFB200DCBD8F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EC6F7C2A5ACFB200DCBD8F /* ContentView.swift */; };
+		E5EC6F7F2A5ACFB500DCBD8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5EC6F7E2A5ACFB500DCBD8F /* Assets.xcassets */; };
+		E5EC6F822A5ACFB500DCBD8F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5EC6F812A5ACFB500DCBD8F /* Preview Assets.xcassets */; };
+		E5EC6F872A5ACFF100DCBD8F /* GameTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EC6F862A5ACFF100DCBD8F /* GameTwo.swift */; };
+		E5EC6F892A5AE1B300DCBD8F /* correct-1.wav in Resources */ = {isa = PBXBuildFile; fileRef = E5EC6F882A5AE1B300DCBD8F /* correct-1.wav */; };
+		E5EC6F8B2A5AE1E900DCBD8F /* wrong-1.wav in Resources */ = {isa = PBXBuildFile; fileRef = E5EC6F8A2A5AE1E800DCBD8F /* wrong-1.wav */; };
+		E5EC6F8D2A5AECD200DCBD8F /* truth-in-the-stones.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5EC6F8C2A5AECD200DCBD8F /* truth-in-the-stones.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +60,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E5354E162A5721120049B870 /* animation0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = animation0.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5354E182A5721120049B870 /* animation0App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animation0App.swift; sourceTree = "<group>"; };
+		E5354E1A2A5721120049B870 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E5354E1C2A5721130049B870 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E552DE2A2A3DE32C0079D370 /* cyborg-ninja.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "cyborg-ninja.mp3"; sourceTree = "<group>"; };
 		E552DE2C2A3DE3E00079D370 /* explosion.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = explosion.wav; sourceTree = "<group>"; };
 		E552DE2E2A3DE6170079D370 /* Explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Explosion.sks; sourceTree = "<group>"; };
@@ -59,9 +74,25 @@
 		E5E2A9842A3C691200B42961 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E5E2A9862A3C691200B42961 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5E2A9882A3C691200B42961 /* SpriteOne.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpriteOne.entitlements; sourceTree = "<group>"; };
+		E5EC6F782A5ACFB200DCBD8F /* SpriteTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpriteTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5EC6F7A2A5ACFB200DCBD8F /* SpriteTwoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteTwoApp.swift; sourceTree = "<group>"; };
+		E5EC6F7C2A5ACFB200DCBD8F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E5EC6F7E2A5ACFB500DCBD8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E5EC6F812A5ACFB500DCBD8F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E5EC6F862A5ACFF100DCBD8F /* GameTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTwo.swift; sourceTree = "<group>"; };
+		E5EC6F882A5AE1B300DCBD8F /* correct-1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "correct-1.wav"; sourceTree = "<group>"; };
+		E5EC6F8A2A5AE1E800DCBD8F /* wrong-1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "wrong-1.wav"; sourceTree = "<group>"; };
+		E5EC6F8C2A5AECD200DCBD8F /* truth-in-the-stones.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "truth-in-the-stones.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E5354E132A5721120049B870 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E5AD0F602A4DDB7F00A14FE2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -76,13 +107,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E5EC6F752A5ACFB200DCBD8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E5354E172A5721120049B870 /* animation0 */ = {
+			isa = PBXGroup;
+			children = (
+				E5354E182A5721120049B870 /* animation0App.swift */,
+				E5354E1A2A5721120049B870 /* ContentView.swift */,
+				E5354E1C2A5721130049B870 /* Assets.xcassets */,
+			);
+			path = animation0;
+			sourceTree = "<group>";
+		};
 		E5E2A9762A3C691200B42961 = {
 			isa = PBXGroup;
 			children = (
 				E5E2A9812A3C691200B42961 /* SpriteOne */,
+				E5354E172A5721120049B870 /* animation0 */,
+				E5EC6F792A5ACFB200DCBD8F /* SpriteTwo */,
 				E5E2A9802A3C691200B42961 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +142,8 @@
 			children = (
 				E5E2A97F2A3C691200B42961 /* SpriteOne.app */,
 				E5AD0F632A4DDB7F00A14FE2 /* SpriteOneW Watch App.app */,
+				E5354E162A5721120049B870 /* animation0.app */,
+				E5EC6F782A5ACFB200DCBD8F /* SpriteTwo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,9 +163,49 @@
 			path = SpriteOne;
 			sourceTree = "<group>";
 		};
+		E5EC6F792A5ACFB200DCBD8F /* SpriteTwo */ = {
+			isa = PBXGroup;
+			children = (
+				E5EC6F7A2A5ACFB200DCBD8F /* SpriteTwoApp.swift */,
+				E5EC6F7C2A5ACFB200DCBD8F /* ContentView.swift */,
+				E5EC6F862A5ACFF100DCBD8F /* GameTwo.swift */,
+				E5EC6F882A5AE1B300DCBD8F /* correct-1.wav */,
+				E5EC6F8A2A5AE1E800DCBD8F /* wrong-1.wav */,
+				E5EC6F7E2A5ACFB500DCBD8F /* Assets.xcassets */,
+				E5EC6F8C2A5AECD200DCBD8F /* truth-in-the-stones.mp3 */,
+				E5EC6F802A5ACFB500DCBD8F /* Preview Content */,
+			);
+			path = SpriteTwo;
+			sourceTree = "<group>";
+		};
+		E5EC6F802A5ACFB500DCBD8F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E5EC6F812A5ACFB500DCBD8F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E5354E152A5721120049B870 /* animation0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5354E232A5721130049B870 /* Build configuration list for PBXNativeTarget "animation0" */;
+			buildPhases = (
+				E5354E122A5721120049B870 /* Sources */,
+				E5354E132A5721120049B870 /* Frameworks */,
+				E5354E142A5721120049B870 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = animation0;
+			productName = animation0;
+			productReference = E5354E162A5721120049B870 /* animation0.app */;
+			productType = "com.apple.product-type.application";
+		};
 		E5AD0F622A4DDB7F00A14FE2 /* SpriteOneW Watch App */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E5AD0F742A4DDB8000A14FE2 /* Build configuration list for PBXNativeTarget "SpriteOneW Watch App" */;
@@ -150,6 +242,23 @@
 			productReference = E5E2A97F2A3C691200B42961 /* SpriteOne.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E5EC6F772A5ACFB200DCBD8F /* SpriteTwo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5EC6F852A5ACFB500DCBD8F /* Build configuration list for PBXNativeTarget "SpriteTwo" */;
+			buildPhases = (
+				E5EC6F742A5ACFB200DCBD8F /* Sources */,
+				E5EC6F752A5ACFB200DCBD8F /* Frameworks */,
+				E5EC6F762A5ACFB200DCBD8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpriteTwo;
+			productName = SpriteTwo;
+			productReference = E5EC6F782A5ACFB200DCBD8F /* SpriteTwo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -160,10 +269,16 @@
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					E5354E152A5721120049B870 = {
+						CreatedOnToolsVersion = 15.0;
+					};
 					E5AD0F622A4DDB7F00A14FE2 = {
 						CreatedOnToolsVersion = 15.0;
 					};
 					E5E2A97E2A3C691200B42961 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					E5EC6F772A5ACFB200DCBD8F = {
 						CreatedOnToolsVersion = 15.0;
 					};
 				};
@@ -183,11 +298,21 @@
 			targets = (
 				E5E2A97E2A3C691200B42961 /* SpriteOne */,
 				E5AD0F622A4DDB7F00A14FE2 /* SpriteOneW Watch App */,
+				E5354E152A5721120049B870 /* animation0 */,
+				E5EC6F772A5ACFB200DCBD8F /* SpriteTwo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E5354E142A5721120049B870 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5354E1D2A5721130049B870 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E5AD0F612A4DDB7F00A14FE2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -212,9 +337,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E5EC6F762A5ACFB200DCBD8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5EC6F892A5AE1B300DCBD8F /* correct-1.wav in Resources */,
+				E5EC6F822A5ACFB500DCBD8F /* Preview Assets.xcassets in Resources */,
+				E5EC6F8D2A5AECD200DCBD8F /* truth-in-the-stones.mp3 in Resources */,
+				E5EC6F8B2A5AE1E900DCBD8F /* wrong-1.wav in Resources */,
+				E5EC6F7F2A5ACFB500DCBD8F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E5354E122A5721120049B870 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5354E1B2A5721120049B870 /* ContentView.swift in Sources */,
+				E5354E192A5721120049B870 /* animation0App.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E5AD0F5F2A4DDB7F00A14FE2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -233,6 +379,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E5EC6F742A5ACFB200DCBD8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5EC6F7D2A5ACFB200DCBD8F /* ContentView.swift in Sources */,
+				E5EC6F872A5ACFF100DCBD8F /* GameTwo.swift in Sources */,
+				E5EC6F7B2A5ACFB200DCBD8F /* SpriteTwoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -245,6 +401,67 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		E5354E212A5721130049B870 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UCV96WLDG4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = top.mightycounty.animation0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E5354E222A5721130049B870 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UCV96WLDG4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = top.mightycounty.animation0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		E5AD0F722A4DDB8000A14FE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -514,9 +731,89 @@
 			};
 			name = Release;
 		};
+		E5EC6F832A5ACFB500DCBD8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SpriteTwo/Preview Content\"";
+				DEVELOPMENT_TEAM = UCV96WLDG4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeRight;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = top.mightycounty.SpriteTwo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E5EC6F842A5ACFB500DCBD8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SpriteTwo/Preview Content\"";
+				DEVELOPMENT_TEAM = UCV96WLDG4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeRight;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = top.mightycounty.SpriteTwo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E5354E232A5721130049B870 /* Build configuration list for PBXNativeTarget "animation0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5354E212A5721130049B870 /* Debug */,
+				E5354E222A5721130049B870 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E5AD0F742A4DDB8000A14FE2 /* Build configuration list for PBXNativeTarget "SpriteOneW Watch App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -540,6 +837,15 @@
 			buildConfigurations = (
 				E5E2A98F2A3C691200B42961 /* Debug */,
 				E5E2A9902A3C691200B42961 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5EC6F852A5ACFB500DCBD8F /* Build configuration list for PBXNativeTarget "SpriteTwo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5EC6F832A5ACFB500DCBD8F /* Debug */,
+				E5EC6F842A5ACFB500DCBD8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
