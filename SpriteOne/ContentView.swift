@@ -8,9 +8,6 @@
 import SwiftUI
 import SpriteKit
 import CoreMotion
-#if !os(watchOS)
-import WebKit
-#endif
 
 struct ContentView: View {
     
@@ -24,7 +21,7 @@ struct ContentView: View {
         #elseif os(iOS)
         SpriteView(scene: GameOne(), debugOptions: [.showsFPS, .showsNodeCount])
                 .ignoresSafeArea()
-        //WebView()
+
         #elseif os(watchOS)
         
         VStack {
@@ -285,14 +282,3 @@ extension CGPoint {
         return CGPoint(x: p1.x - p2.x, y: p1.y - p2.y)
     }
 }
-#if os(iOS)
-struct WebView: UIViewRepresentable {
-    let url: URL = URL(string: "https://mightycounty.top")!
-    func makeUIView(context: Context) -> WKWebView {
-        return WKWebView()
-    }
-    func updateUIView(_ uiView: WKWebView, context: Context) {
-        uiView.load(URLRequest(url: url))
-    }
-}
-#endif

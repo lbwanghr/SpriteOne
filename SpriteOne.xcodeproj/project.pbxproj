@@ -33,6 +33,15 @@
 		E5EC6F892A5AE1B300DCBD8F /* correct-1.wav in Resources */ = {isa = PBXBuildFile; fileRef = E5EC6F882A5AE1B300DCBD8F /* correct-1.wav */; };
 		E5EC6F8B2A5AE1E900DCBD8F /* wrong-1.wav in Resources */ = {isa = PBXBuildFile; fileRef = E5EC6F8A2A5AE1E800DCBD8F /* wrong-1.wav */; };
 		E5EC6F8D2A5AECD200DCBD8F /* truth-in-the-stones.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5EC6F8C2A5AECD200DCBD8F /* truth-in-the-stones.mp3 */; };
+		E5FFDC6E2A5B9BCE00C9C1DE /* SpriteThreeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FFDC6D2A5B9BCE00C9C1DE /* SpriteThreeApp.swift */; };
+		E5FFDC702A5B9BCE00C9C1DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FFDC6F2A5B9BCE00C9C1DE /* ContentView.swift */; };
+		E5FFDC722A5B9BD000C9C1DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5FFDC712A5B9BD000C9C1DE /* Assets.xcassets */; };
+		E5FFDC752A5B9BD000C9C1DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5FFDC742A5B9BD000C9C1DE /* Preview Assets.xcassets */; };
+		E5FFDC7A2A5B9BDC00C9C1DE /* GameThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FFDC792A5B9BDC00C9C1DE /* GameThree.swift */; };
+		E5FFDC7C2A5C236900C9C1DE /* Explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = E5FFDC7B2A5C236900C9C1DE /* Explosion.sks */; };
+		E5FFDC7E2A5C285C00C9C1DE /* score.wav in Resources */ = {isa = PBXBuildFile; fileRef = E5FFDC7D2A5C285C00C9C1DE /* score.wav */; };
+		E5FFDC802A5C286B00C9C1DE /* explosion.wav in Resources */ = {isa = PBXBuildFile; fileRef = E5FFDC7F2A5C286B00C9C1DE /* explosion.wav */; };
+		E5FFDC822A5C288700C9C1DE /* the-hero.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5FFDC812A5C288700C9C1DE /* the-hero.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +92,16 @@
 		E5EC6F882A5AE1B300DCBD8F /* correct-1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "correct-1.wav"; sourceTree = "<group>"; };
 		E5EC6F8A2A5AE1E800DCBD8F /* wrong-1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "wrong-1.wav"; sourceTree = "<group>"; };
 		E5EC6F8C2A5AECD200DCBD8F /* truth-in-the-stones.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "truth-in-the-stones.mp3"; sourceTree = "<group>"; };
+		E5FFDC6B2A5B9BCE00C9C1DE /* SpriteThree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpriteThree.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5FFDC6D2A5B9BCE00C9C1DE /* SpriteThreeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteThreeApp.swift; sourceTree = "<group>"; };
+		E5FFDC6F2A5B9BCE00C9C1DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E5FFDC712A5B9BD000C9C1DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E5FFDC742A5B9BD000C9C1DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E5FFDC792A5B9BDC00C9C1DE /* GameThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameThree.swift; sourceTree = "<group>"; };
+		E5FFDC7B2A5C236900C9C1DE /* Explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Explosion.sks; sourceTree = "<group>"; };
+		E5FFDC7D2A5C285C00C9C1DE /* score.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = score.wav; sourceTree = "<group>"; };
+		E5FFDC7F2A5C286B00C9C1DE /* explosion.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = explosion.wav; sourceTree = "<group>"; };
+		E5FFDC812A5C288700C9C1DE /* the-hero.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "the-hero.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +133,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E5FFDC682A5B9BCE00C9C1DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -133,6 +159,7 @@
 				E5E2A9812A3C691200B42961 /* SpriteOne */,
 				E5354E172A5721120049B870 /* animation0 */,
 				E5EC6F792A5ACFB200DCBD8F /* SpriteTwo */,
+				E5FFDC6C2A5B9BCE00C9C1DE /* SpriteThree */,
 				E5E2A9802A3C691200B42961 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -144,6 +171,7 @@
 				E5AD0F632A4DDB7F00A14FE2 /* SpriteOneW Watch App.app */,
 				E5354E162A5721120049B870 /* animation0.app */,
 				E5EC6F782A5ACFB200DCBD8F /* SpriteTwo.app */,
+				E5FFDC6B2A5B9BCE00C9C1DE /* SpriteThree.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -182,6 +210,30 @@
 			isa = PBXGroup;
 			children = (
 				E5EC6F812A5ACFB500DCBD8F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E5FFDC6C2A5B9BCE00C9C1DE /* SpriteThree */ = {
+			isa = PBXGroup;
+			children = (
+				E5FFDC6D2A5B9BCE00C9C1DE /* SpriteThreeApp.swift */,
+				E5FFDC6F2A5B9BCE00C9C1DE /* ContentView.swift */,
+				E5FFDC792A5B9BDC00C9C1DE /* GameThree.swift */,
+				E5FFDC7B2A5C236900C9C1DE /* Explosion.sks */,
+				E5FFDC712A5B9BD000C9C1DE /* Assets.xcassets */,
+				E5FFDC7D2A5C285C00C9C1DE /* score.wav */,
+				E5FFDC7F2A5C286B00C9C1DE /* explosion.wav */,
+				E5FFDC812A5C288700C9C1DE /* the-hero.mp3 */,
+				E5FFDC732A5B9BD000C9C1DE /* Preview Content */,
+			);
+			path = SpriteThree;
+			sourceTree = "<group>";
+		};
+		E5FFDC732A5B9BD000C9C1DE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E5FFDC742A5B9BD000C9C1DE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -259,6 +311,23 @@
 			productReference = E5EC6F782A5ACFB200DCBD8F /* SpriteTwo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E5FFDC6A2A5B9BCE00C9C1DE /* SpriteThree */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5FFDC782A5B9BD000C9C1DE /* Build configuration list for PBXNativeTarget "SpriteThree" */;
+			buildPhases = (
+				E5FFDC672A5B9BCE00C9C1DE /* Sources */,
+				E5FFDC682A5B9BCE00C9C1DE /* Frameworks */,
+				E5FFDC692A5B9BCE00C9C1DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpriteThree;
+			productName = SpriteThree;
+			productReference = E5FFDC6B2A5B9BCE00C9C1DE /* SpriteThree.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -281,6 +350,9 @@
 					E5EC6F772A5ACFB200DCBD8F = {
 						CreatedOnToolsVersion = 15.0;
 					};
+					E5FFDC6A2A5B9BCE00C9C1DE = {
+						CreatedOnToolsVersion = 15.0;
+					};
 				};
 			};
 			buildConfigurationList = E5E2A97A2A3C691200B42961 /* Build configuration list for PBXProject "SpriteOne" */;
@@ -300,6 +372,7 @@
 				E5AD0F622A4DDB7F00A14FE2 /* SpriteOneW Watch App */,
 				E5354E152A5721120049B870 /* animation0 */,
 				E5EC6F772A5ACFB200DCBD8F /* SpriteTwo */,
+				E5FFDC6A2A5B9BCE00C9C1DE /* SpriteThree */,
 			);
 		};
 /* End PBXProject section */
@@ -349,6 +422,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E5FFDC692A5B9BCE00C9C1DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5FFDC802A5C286B00C9C1DE /* explosion.wav in Resources */,
+				E5FFDC752A5B9BD000C9C1DE /* Preview Assets.xcassets in Resources */,
+				E5FFDC7E2A5C285C00C9C1DE /* score.wav in Resources */,
+				E5FFDC722A5B9BD000C9C1DE /* Assets.xcassets in Resources */,
+				E5FFDC822A5C288700C9C1DE /* the-hero.mp3 in Resources */,
+				E5FFDC7C2A5C236900C9C1DE /* Explosion.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -386,6 +472,16 @@
 				E5EC6F7D2A5ACFB200DCBD8F /* ContentView.swift in Sources */,
 				E5EC6F872A5ACFF100DCBD8F /* GameTwo.swift in Sources */,
 				E5EC6F7B2A5ACFB200DCBD8F /* SpriteTwoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5FFDC672A5B9BCE00C9C1DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5FFDC7A2A5B9BDC00C9C1DE /* GameThree.swift in Sources */,
+				E5FFDC702A5B9BCE00C9C1DE /* ContentView.swift in Sources */,
+				E5FFDC6E2A5B9BCE00C9C1DE /* SpriteThreeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -802,6 +898,77 @@
 			};
 			name = Release;
 		};
+		E5FFDC762A5B9BD000C9C1DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SpriteThree/Preview Content\"";
+				DEVELOPMENT_TEAM = UCV96WLDG4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeRight;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = top.mightycounty.SpriteThree;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E5FFDC772A5B9BD000C9C1DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SpriteThree/Preview Content\"";
+				DEVELOPMENT_TEAM = UCV96WLDG4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeRight;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = top.mightycounty.SpriteThree;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -846,6 +1013,15 @@
 			buildConfigurations = (
 				E5EC6F832A5ACFB500DCBD8F /* Debug */,
 				E5EC6F842A5ACFB500DCBD8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5FFDC782A5B9BD000C9C1DE /* Build configuration list for PBXNativeTarget "SpriteThree" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5FFDC762A5B9BD000C9C1DE /* Debug */,
+				E5FFDC772A5B9BD000C9C1DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

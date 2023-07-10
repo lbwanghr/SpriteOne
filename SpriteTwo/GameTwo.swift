@@ -5,7 +5,7 @@
 //  Created by Haoran Wang on 2023/7/9.
 //
 
-import SwiftUI
+import Foundation
 import SpriteKit
 
 class GameTwo: SKScene {
@@ -184,9 +184,4 @@ class GameTwo: SKScene {
         self.addChild(wrong)
         wrong.run(.sequence([.wait(forDuration: 0.5), .removeFromParent()]))
     }
-}
-
-#Preview {
-    SpriteView(scene: GameTwo())
-        .ignoresSafeArea()
 }
