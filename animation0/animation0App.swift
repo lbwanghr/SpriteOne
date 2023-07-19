@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SpriteKit
 
 @main
 struct animation0App: App {
@@ -13,5 +14,14 @@ struct animation0App: App {
         WindowGroup {
             ContentView()
         }
+    }
+}
+
+struct ContentView: View {
+    var body: some View {
+        VStack {
+            SpriteView(scene: loadScene)
+        }
+        .ignoresSafeArea()
     }
 }
