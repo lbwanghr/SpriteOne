@@ -26,7 +26,6 @@ class GameRole: SKSpriteNode {
     init() {
         super.init(texture: nil, color: .gray, size: .zero)
         
-        characterType = "Human-Soldier-Cyan"
         size = CGSize(width: 32, height: 32)
         texture = idleTexture
         
@@ -43,6 +42,9 @@ class GameRole: SKSpriteNode {
     
     func handleBtnMove() {
         shouldContinueMoving = true
+        
+        removeAllActions()
+        
         let moveAction = SKAction.move(by: dataSource.moveVectors[facingDirection]!, duration: moveDuration)
         run(moveAction)
         let animation = dataSource.animations[characterType]![facingDirection]![.move]!
@@ -54,11 +56,16 @@ class GameRole: SKSpriteNode {
     
     func loopAnimation() {
         if shouldContinueMoving {
+            
+            removeAllActions()
+            
             run(.move(by: dataSource.moveVectors[facingDirection]!, duration: moveDuration))
             run(.animate(with: dataSource.animations[characterType]![facingDirection]![.move]!, timePerFrame: timePerFrame)) {
                 self.shouldResetTexture = true
                 self.loopAnimation()
             }
+        } else {
+            shouldResetTexture = true
         }
     }
     
@@ -67,6 +74,9 @@ class GameRole: SKSpriteNode {
         let set = dataSource.animations[characterType]![facingDirection]!
         if let animationType = AnimationType(rawValue: name) {
             animation = set[animationType]!
+            
+            removeAllActions()
+            
             run(.animate(with: animation, timePerFrame: timePerFrame)) {
                 if name != "dead" {
                     self.shouldResetTexture = true
@@ -75,6 +85,9 @@ class GameRole: SKSpriteNode {
         }
         
         if name == "changeRole" {
+            
+            removeAllActions()
+            
             characterType = characterAssets.randomElement()!
         }
         
@@ -85,7 +98,7 @@ class GameRole: SKSpriteNode {
         if shouldContinueMoving {
             shouldContinueMoving = false
             shouldResetTexture = true
-            removeAllActions()
+            //removeAllActions()
         }
     }
     
@@ -95,11 +108,7 @@ class GameRole: SKSpriteNode {
             shouldResetTexture = false
         }
         
-        if hasActions() {
-            isUserInteractionEnabled = false
-        } else {
-            isUserInteractionEnabled = true
-        }
+
     }
     
 }

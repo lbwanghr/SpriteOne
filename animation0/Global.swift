@@ -24,6 +24,8 @@ let moveSpeed = 5.0
 let numberOfTree = 10
 let btnAlpha = 0.6
 
-let characterAssets = ["Archer-Green", "Archer-Purple", "Character-Base", "Mage-Cyan", "Mage-Red", "Soldier-Blue", "Soldier-Red", "Soldier-Yellow", "Warrior-Blue", "Warrior-Red", "Human-Soldier-Cyan", "Human-Soldier-Red", "Human-Worker-Cyan", "Human-Worker-Red", "Orc-Grunt", "Orc-Peon-Cyan", "Orc-Peon-Red", "Orc-Soldier-Cyan", "Orc-Soldier-Red"]
+//let characterAssets = ["Archer-Green", "Archer-Purple", "Character-Base", "Mage-Cyan", "Mage-Red", "Soldier-Blue", "Soldier-Red", "Soldier-Yellow", "Warrior-Blue", "Warrior-Red", "Human-Soldier-Cyan", "Human-Soldier-Red", "Human-Worker-Cyan", "Human-Worker-Red", "Orc-Grunt", "Orc-Peon-Cyan", "Orc-Peon-Red", "Orc-Soldier-Cyan", "Orc-Soldier-Red"]
+
+let characterAssets = ["Archer-Green", "Orc-Soldier-Red"]
 
 

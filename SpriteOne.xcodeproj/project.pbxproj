@@ -15,6 +15,7 @@
 		E552DE2F2A3DE6170079D370 /* Explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = E552DE2E2A3DE6170079D370 /* Explosion.sks */; };
 		E57CFF2C2A3CB4C900E062CE /* SpaceDust.sks in Resources */ = {isa = PBXBuildFile; fileRef = E57CFF2B2A3CB4C900E062CE /* SpaceDust.sks */; };
 		E595B4592A67B1C000B95974 /* LoadScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E595B4582A67B1C000B95974 /* LoadScene.swift */; };
+		E595B45C2A68414500B95974 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E595B45B2A68414500B95974 /* Utilities.swift */; };
 		E5AD0F702A4DDB8000A14FE2 /* SpriteOneW Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E5AD0F632A4DDB7F00A14FE2 /* SpriteOneW Watch App.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E5AD0F752A4DDBB900A14FE2 /* SpaceDust.sks in Resources */ = {isa = PBXBuildFile; fileRef = E57CFF2B2A3CB4C900E062CE /* SpaceDust.sks */; };
 		E5AD0F7A2A4DDE0000A14FE2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E2A9842A3C691200B42961 /* ContentView.swift */; };
@@ -90,6 +91,7 @@
 		E552DE2E2A3DE6170079D370 /* Explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Explosion.sks; sourceTree = "<group>"; };
 		E57CFF2B2A3CB4C900E062CE /* SpaceDust.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SpaceDust.sks; sourceTree = "<group>"; };
 		E595B4582A67B1C000B95974 /* LoadScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadScene.swift; sourceTree = "<group>"; };
+		E595B45B2A68414500B95974 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		E5AD0F632A4DDB7F00A14FE2 /* SpriteOneW Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SpriteOneW Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5E2A97F2A3C691200B42961 /* SpriteOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpriteOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5E2A9822A3C691200B42961 /* SpriteOneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteOneApp.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 				E5354E182A5721120049B870 /* animation0App.swift */,
 				E5354E1A2A5721120049B870 /* GameScene.swift */,
 				E595B4582A67B1C000B95974 /* LoadScene.swift */,
+				E595B45B2A68414500B95974 /* Utilities.swift */,
 				E5E5378F2A66CF530085C417 /* GameRole.swift */,
 				E5E5378D2A6593230085C417 /* Global.swift */,
 				E5E5378B2A658E070085C417 /* DataSource.swift */,
@@ -538,6 +541,7 @@
 			files = (
 				E595B4592A67B1C000B95974 /* LoadScene.swift in Sources */,
 				E5E5378C2A658E070085C417 /* DataSource.swift in Sources */,
+				E595B45C2A68414500B95974 /* Utilities.swift in Sources */,
 				E5E5378E2A6593230085C417 /* Global.swift in Sources */,
 				E5354E1B2A5721120049B870 /* GameScene.swift in Sources */,
 				E5354E192A5721120049B870 /* animation0App.swift in Sources */,

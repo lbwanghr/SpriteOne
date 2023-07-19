@@ -22,6 +22,12 @@ class GameScene: SKScene {
         self.addChild(dataSource.actionBtnSet)
         
         self.addChild(role)
+        
+        
+    }
+    
+    override func didMove(to view: SKView) {
+        self.view?.isMultipleTouchEnabled = true
 
     }
     
@@ -31,7 +37,11 @@ class GameScene: SKScene {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let n = touches.count
+        print("began touche counts \(n)")
+        
         guard let touch = touches.first else { return }
+        
         let location = touch.location(in: self)
         let nodes = self.nodes(at: location)
         guard let node = nodes.first else { return }
@@ -53,6 +63,10 @@ class GameScene: SKScene {
         
     }
     
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let n = touches.count
+        print("moving touche counts \(n)")
+    }
     
 
 }

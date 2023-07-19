@@ -17,6 +17,7 @@ class LoadScene: SKScene {
     }
     
     /// sceneDidLoad before didMove
+    /// - Note: sceneDidLoad could only run once but didMove could run several times
     override func sceneDidLoad() {
         size = resolution
         scaleMode = .aspectFit
@@ -31,20 +32,28 @@ class LoadScene: SKScene {
         addChild(progressBar)
         
         Thread {
-            self.loadingText = "Loading Animations..."
-            dataSource.loadAnimations()
-            Thread.sleep(forTimeInterval: 0.3)
-            dataSource.loadProgress = 0.3
+            Date.printWithTimeStamp("Generating background")
             
             self.loadingText = "Generating Background..."
             dataSource.loadBackground()
-            Thread.sleep(forTimeInterval: 0.3)
+//            Thread.sleep(forTimeInterval: 0.3)
+            dataSource.loadProgress = 0.3
+            
+            Date.printWithTimeStamp("Loading animations")
+            
+            self.loadingText = "Loading Animations..."
+            dataSource.loadAnimations()
+//            Thread.sleep(forTimeInterval: 0.3)
             dataSource.loadProgress = 0.6
+            
+            Date.printWithTimeStamp("Loading controls")
             
             self.loadingText = "Loading Controls..."
             dataSource.loadButtons()
-            Thread.sleep(forTimeInterval: 0.3)
+//            Thread.sleep(forTimeInterval: 0.3)
             dataSource.loadProgress = 1.0
+            
+            Date.printWithTimeStamp("Loading completed")
         }.start()
 
     }
@@ -52,9 +61,7 @@ class LoadScene: SKScene {
     override func update(_ currentTime: TimeInterval) {
         progressBar.xScale = dataSource.loadProgress
         if dataSource.loadProgress == 1.0 {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-                self.view?.presentScene(gameScene, transition: .fade(withDuration: 0.4))
-            }
+            self.view?.presentScene(gameScene, transition: .fade(withDuration: 0.3))
             progressBar.alpha = 0
             loadingLabel.alpha = 0
         }
