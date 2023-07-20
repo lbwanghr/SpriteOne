@@ -1,69 +1,100 @@
 //
-//  DataSource.swift
+//  ContentView.swift
 //  animation0
 //
-//  Created by Haoran Wang on 2023/7/17.
+//  Created by Haoran Wang on 2023/7/7.
 //
 
+import SwiftUI
 import SpriteKit
 import CoreImage
 
-enum Direction: Int, CaseIterable { case southwest = 0, west, northwest, north, northeast, east, southeast, south }
-enum AnimationType: String, CaseIterable { case move, slash, shoot, cast, hurt, dead }
-enum ActionType: String, CaseIterable { case slash, shoot, cast, hurt, dead, changeRole }
-typealias AnimationSet = [Direction: [AnimationType: [SKTexture]]]
-
-
-
-class DataSource {
-    var animations: [String: AnimationSet] = [:]
+class GameScene: SKScene {
+    let role = GameRole()
     var bg = SKNode()
     var moveBtnSet = SKNode()
     var actionBtnSet = SKNode()
-    var loadProgress = 0.0
+    var touchedNodes = [UITouch: SKNode]() // Record every touch which binding to a node.
     
-    let moveVectors: [Direction: CGVector] = [
-        .southwest: CGVector(dx: -sqrt(moveSpeed), dy: -sqrt(moveSpeed)),
-        .west: CGVector(dx: -moveSpeed, dy: 0),
-        .northwest: CGVector(dx: -sqrt(moveSpeed), dy: sqrt(moveSpeed)),
-        .north: CGVector(dx: 0, dy: moveSpeed),
-        .northeast: CGVector(dx: sqrt(moveSpeed), dy: sqrt(moveSpeed)),
-        .east: CGVector(dx: moveSpeed, dy: 0),
-        .southeast: CGVector(dx: sqrt(moveSpeed), dy: -sqrt(moveSpeed)),
-        .south: CGVector(dx: 0, dy: -moveSpeed)
-    ]
-    
-    /// Generate animation library including all characters's all animations by direction and action.
-    func loadAnimations() {
-        let context = CIContext()
-        for characterName in characterAssets {
-            let input = CIImage(image: UIImage(named: characterName)!)!
-            var results = AnimationSet()
-            
-            for direction in Direction.allCases {
-                results[direction] = [:]
-                
-                var actionOffSet = -1
-                for action in AnimationType.allCases {
-                    actionOffSet += 1
-                    results[direction]![action] = []
-                    for index in 0 ..< 4 {
-                        let result = context.createCGImage(input, from: input.regionOfInterest(for: input, in: CGRect(x: (actionOffSet * 4 + index) * 32, y: direction.rawValue * 32, width: 32, height: 32)))
-                        results[direction]![action]!.append(SKTexture(cgImage: result!))
-                    }
-                }
-                
-            }
-            animations[characterName] = results
-        }
+    override func sceneDidLoad() {
+        size = resolution
+        anchorPoint = CGPoint(x: 0.5, y: 0.5)
+        scaleMode = .aspectFit
+        
+        bg = generateBackground()
+        addChild(bg)
+        
+        moveBtnSet = generateMoveButtons()
+        addChild(moveBtnSet)
+        
+        actionBtnSet = generateActionButtons()
+        addChild(actionBtnSet)
+        
+        role.configuration()
+        addChild(role)
+        
+        
+        
     }
+    
+    override func didMove(to view: SKView) {
+        self.view?.isMultipleTouchEnabled = true
+
+    }
+    
+    override func update(_ currentTime: TimeInterval) {
+        role.handleUpdate()
+        
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        for touch in touches {
+            let location = touch.location(in: self)
+            let nodes = self.nodes(at: location)
+            guard let node = nodes.first else { return }
+            
+            if let name = node.name {
+                if name.hasPrefix("move") {
+                    role.facingDirection = Direction(rawValue: Int(name.suffix(1))!)!
+                    role.handleBtnMove()
+                    touchedNodes[touch] = node  // Record this node with UITouch key.
+                    
+                } else if let actionType = ActionType(rawValue: name){
+                    
+                    role.handleActionTouch(name: name)
+                    
+                } else {
+                    
+                }
+            }
+        }
+        
+        
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        for touch in touches {
+            touchedNodes.removeValue(forKey: touch)
+            role.endTouching()
+            
+        }
+
+        
+    }
+    
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+    }
+    
+
     
     /// Generate background
     /// - Tiles are attached to a sknode called bg.
     /// - Note: sknode has no anchorPoint property, that means the anchorPoint is .zero.
-    func loadBackground() {
+    func generateBackground() -> SKNode {
+        let bg = SKNode()
         let (rows, cols) = (Int(resolution.height) / 16, Int(resolution.width) / 16)
-        let bgCells = ["Dirt", "Grass1", "Grass2"]
+        let tileNames = ["Dirt", "Grass1", "Grass2"]
         let bgTree = "Tree"
         
         bg.position = CGPoint(x: resolution.width / -2, y: resolution.height / -2)
@@ -71,7 +102,7 @@ class DataSource {
         // Generate tiles(designate tile's anchorPoint to .zero)
         for row in 0 ..< rows {
             for col in 0 ..< cols {
-                let tile = SKSpriteNode(imageNamed: bgCells.randomElement()!)
+                let tile = SKSpriteNode(imageNamed: tileNames.randomElement()!)
                 tile.anchorPoint = .zero
                 tile.position = CGPoint(x: col * 16, y: row * 16)
                 tile.zPosition = -1
@@ -92,11 +123,13 @@ class DataSource {
             
             bg.addChild(tree)
         }
+        return bg
     }
     
-    /// Load buttons' texture and arrange their position
+    /// Generate buttons' texture and arrange their position
     /// - Buttons are attached to two btnSet sknodes.
-    func loadButtons() {
+    func generateMoveButtons() -> SKNode {
+        let root = SKNode()
         for direction in Direction.allCases {
             let btn = SKSpriteNode()
             let uiImg = UIImage(systemName: "arrowshape.down.fill")!
@@ -107,11 +140,15 @@ class DataSource {
             btn.position = CGPoint(x: (CGFloat(direction.rawValue) - 3.5) * btnInterval, y: 0)
             btn.size = btnSize
             btn.name = "move\(direction.rawValue)"
-            moveBtnSet.addChild(btn)
-            moveBtnSet.position = moveBtnPosition
+            root.addChild(btn)
+            root.position = moveBtnPosition
             
         }
-        
+        return root
+    }
+    
+    func generateActionButtons() -> SKNode {
+        let root = SKNode()
         var actionBtnXOffset = -1
         for actionType in ActionType.allCases {
             actionBtnXOffset += 1
@@ -126,8 +163,11 @@ class DataSource {
             
             btn.size = btnSize
             btn.name = imgName
-            actionBtnSet.addChild(btn)
-            actionBtnSet.position = actionBtnPosition
+            root.addChild(btn)
+            root.position = actionBtnPosition
         }
+        return root
     }
+    
 }
+

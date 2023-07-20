@@ -25,6 +25,11 @@
 			<key>orderHint</key>
 			<integer>6</integer>
 		</dict>
+		<key>Punnyground.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>SpriteFour.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -43,21 +48,21 @@
 		<key>SpriteThree.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>3</integer>
 		</dict>
 		<key>SpriteTwo.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
-		</dict>
-		<key>animation0.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>4</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>E5354E152A5721120049B870</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>E5AD0F622A4DDB7F00A14FE2</key>
 		<dict>
 			<key>primary</key>

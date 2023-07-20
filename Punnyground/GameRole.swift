@@ -20,12 +20,10 @@ class GameRole: SKSpriteNode {
     var shouldContinueMoving: Bool = false
     
     var idleTexture: SKTexture {
-        dataSource.animations[characterType]![facingDirection]![.move]![0]
+        animations[characterType]![facingDirection]![.move]![0]
     }
     
-    init() {
-        super.init(texture: nil, color: .gray, size: .zero)
-        
+    func configuration() {
         size = CGSize(width: 32, height: 32)
         texture = idleTexture
         
@@ -33,11 +31,6 @@ class GameRole: SKSpriteNode {
         physicsBody?.affectedByGravity = false
         physicsBody?.mass = 1
         physicsBody?.allowsRotation = false
-        
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
     
     func handleBtnMove() {
@@ -45,13 +38,21 @@ class GameRole: SKSpriteNode {
         
         removeAllActions()
         
-        let moveAction = SKAction.move(by: dataSource.moveVectors[facingDirection]!, duration: moveDuration)
-        run(moveAction)
-        let animation = dataSource.animations[characterType]![facingDirection]![.move]!
-        let animationAction = SKAction.animate(with: animation, timePerFrame: timePerFrame)
-        run(animationAction){
-            self.loopAnimation()
+        let physicsMove = SKAction.move(by: moveVectors[facingDirection]!, duration: moveDuration)
+        if action(forKey: "physicsMove") != nil {
+            removeAction(forKey: "physicsMove")
         }
+        run(physicsMove, withKey: "physicsMove")
+        
+        let moveAnimation = animations[characterType]![facingDirection]![.move]!
+        let playMoveAnimation = SKAction.animate(with: moveAnimation, timePerFrame: timePerFrame)
+        
+        if action(forKey: "playMoveAnimation") != nil {
+            removeAction(forKey: "playMoveAnimation")
+        }
+        run(SKAction.sequence([playMoveAnimation, .run{
+            self.loopAnimation()
+        }]), withKey: "playMoveAnimation")
     }
     
     func loopAnimation() {
@@ -59,8 +60,8 @@ class GameRole: SKSpriteNode {
             
             removeAllActions()
             
-            run(.move(by: dataSource.moveVectors[facingDirection]!, duration: moveDuration))
-            run(.animate(with: dataSource.animations[characterType]![facingDirection]![.move]!, timePerFrame: timePerFrame)) {
+            run(.move(by: moveVectors[facingDirection]!, duration: moveDuration))
+            run(.animate(with: animations[characterType]![facingDirection]![.move]!, timePerFrame: timePerFrame)) {
                 self.shouldResetTexture = true
                 self.loopAnimation()
             }
@@ -69,26 +70,28 @@ class GameRole: SKSpriteNode {
         }
     }
     
-    func handleOtherTouch(name: String) {
+    func handleActionTouch(name: String) {
         var animation: [SKTexture]
-        let set = dataSource.animations[characterType]![facingDirection]!
+        let set = animations[characterType]![facingDirection]!
         if let animationType = AnimationType(rawValue: name) {
             animation = set[animationType]!
             
-            removeAllActions()
-            
-            run(.animate(with: animation, timePerFrame: timePerFrame)) {
-                if name != "dead" {
-                    self.shouldResetTexture = true
-                }
+            if action(forKey: "playActionAnimation") == nil {
+                run(.sequence([.animate(with: animation, timePerFrame: timePerFrame), .run {
+                    if name != "dead" {
+                        self.shouldResetTexture = true
+                    }
+                }]), withKey: "playActionAnimation")
             }
+
+            
         }
         
         if name == "changeRole" {
             
             removeAllActions()
             
-            characterType = characterAssets.randomElement()!
+            characterType = characterNames.randomElement()!
         }
         
         
@@ -98,7 +101,7 @@ class GameRole: SKSpriteNode {
         if shouldContinueMoving {
             shouldContinueMoving = false
             shouldResetTexture = true
-            //removeAllActions()
+
         }
     }
     

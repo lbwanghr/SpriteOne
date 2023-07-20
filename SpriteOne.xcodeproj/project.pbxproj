@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E5354E192A5721120049B870 /* animation0App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5354E182A5721120049B870 /* animation0App.swift */; };
+		E5354E192A5721120049B870 /* PunnygroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5354E182A5721120049B870 /* PunnygroundApp.swift */; };
 		E5354E1B2A5721120049B870 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5354E1A2A5721120049B870 /* GameScene.swift */; };
 		E5354E1D2A5721130049B870 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5354E1C2A5721130049B870 /* Assets.xcassets */; };
 		E552DE2B2A3DE32C0079D370 /* cyborg-ninja.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E552DE2A2A3DE32C0079D370 /* cyborg-ninja.mp3 */; };
 		E552DE2D2A3DE3E00079D370 /* explosion.wav in Resources */ = {isa = PBXBuildFile; fileRef = E552DE2C2A3DE3E00079D370 /* explosion.wav */; };
 		E552DE2F2A3DE6170079D370 /* Explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = E552DE2E2A3DE6170079D370 /* Explosion.sks */; };
 		E57CFF2C2A3CB4C900E062CE /* SpaceDust.sks in Resources */ = {isa = PBXBuildFile; fileRef = E57CFF2B2A3CB4C900E062CE /* SpaceDust.sks */; };
-		E595B4592A67B1C000B95974 /* LoadScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E595B4582A67B1C000B95974 /* LoadScene.swift */; };
 		E595B45C2A68414500B95974 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E595B45B2A68414500B95974 /* Utilities.swift */; };
 		E5AD0F702A4DDB8000A14FE2 /* SpriteOneW Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E5AD0F632A4DDB7F00A14FE2 /* SpriteOneW Watch App.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E5AD0F752A4DDBB900A14FE2 /* SpaceDust.sks in Resources */ = {isa = PBXBuildFile; fileRef = E57CFF2B2A3CB4C900E062CE /* SpaceDust.sks */; };
@@ -29,8 +28,6 @@
 		E5E2A9852A3C691200B42961 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E2A9842A3C691200B42961 /* ContentView.swift */; };
 		E5E537882A5EB4820085C417 /* zap.wav in Resources */ = {isa = PBXBuildFile; fileRef = E5E537872A5EB4820085C417 /* zap.wav */; };
 		E5E5378A2A5EB4CE0085C417 /* smart-bomb.wav in Resources */ = {isa = PBXBuildFile; fileRef = E5E537892A5EB4CE0085C417 /* smart-bomb.wav */; };
-		E5E5378C2A658E070085C417 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E5378B2A658E070085C417 /* DataSource.swift */; };
-		E5E5378E2A6593230085C417 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E5378D2A6593230085C417 /* Global.swift */; };
 		E5E537902A66CF530085C417 /* GameRole.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E5378F2A66CF530085C417 /* GameRole.swift */; };
 		E5EC6F7B2A5ACFB200DCBD8F /* SpriteTwoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EC6F7A2A5ACFB200DCBD8F /* SpriteTwoApp.swift */; };
 		E5EC6F7D2A5ACFB200DCBD8F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EC6F7C2A5ACFB200DCBD8F /* ContentView.swift */; };
@@ -83,14 +80,13 @@
 
 /* Begin PBXFileReference section */
 		E5354E162A5721120049B870 /* animation0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = animation0.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E5354E182A5721120049B870 /* animation0App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animation0App.swift; sourceTree = "<group>"; };
+		E5354E182A5721120049B870 /* PunnygroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunnygroundApp.swift; sourceTree = "<group>"; };
 		E5354E1A2A5721120049B870 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		E5354E1C2A5721130049B870 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E552DE2A2A3DE32C0079D370 /* cyborg-ninja.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "cyborg-ninja.mp3"; sourceTree = "<group>"; };
 		E552DE2C2A3DE3E00079D370 /* explosion.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = explosion.wav; sourceTree = "<group>"; };
 		E552DE2E2A3DE6170079D370 /* Explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Explosion.sks; sourceTree = "<group>"; };
 		E57CFF2B2A3CB4C900E062CE /* SpaceDust.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SpaceDust.sks; sourceTree = "<group>"; };
-		E595B4582A67B1C000B95974 /* LoadScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadScene.swift; sourceTree = "<group>"; };
 		E595B45B2A68414500B95974 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		E5AD0F632A4DDB7F00A14FE2 /* SpriteOneW Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SpriteOneW Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5E2A97F2A3C691200B42961 /* SpriteOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpriteOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,8 +96,6 @@
 		E5E2A9882A3C691200B42961 /* SpriteOne.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpriteOne.entitlements; sourceTree = "<group>"; };
 		E5E537872A5EB4820085C417 /* zap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = zap.wav; sourceTree = "<group>"; };
 		E5E537892A5EB4CE0085C417 /* smart-bomb.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "smart-bomb.wav"; sourceTree = "<group>"; };
-		E5E5378B2A658E070085C417 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
-		E5E5378D2A6593230085C417 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		E5E5378F2A66CF530085C417 /* GameRole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRole.swift; sourceTree = "<group>"; };
 		E5EC6F782A5ACFB200DCBD8F /* SpriteTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpriteTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5EC6F7A2A5ACFB200DCBD8F /* SpriteTwoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteTwoApp.swift; sourceTree = "<group>"; };
@@ -177,19 +171,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E5354E172A5721120049B870 /* animation0 */ = {
+		E5354E172A5721120049B870 /* Punnyground */ = {
 			isa = PBXGroup;
 			children = (
-				E5354E182A5721120049B870 /* animation0App.swift */,
+				E5354E182A5721120049B870 /* PunnygroundApp.swift */,
 				E5354E1A2A5721120049B870 /* GameScene.swift */,
-				E595B4582A67B1C000B95974 /* LoadScene.swift */,
-				E595B45B2A68414500B95974 /* Utilities.swift */,
 				E5E5378F2A66CF530085C417 /* GameRole.swift */,
-				E5E5378D2A6593230085C417 /* Global.swift */,
-				E5E5378B2A658E070085C417 /* DataSource.swift */,
+				E595B45B2A68414500B95974 /* Utilities.swift */,
 				E5354E1C2A5721130049B870 /* Assets.xcassets */,
 			);
-			path = animation0;
+			path = Punnyground;
 			sourceTree = "<group>";
 		};
 		E5E2A9762A3C691200B42961 = {
@@ -199,7 +190,7 @@
 				E5EC6F792A5ACFB200DCBD8F /* SpriteTwo */,
 				E5FFDC6C2A5B9BCE00C9C1DE /* SpriteThree */,
 				E5FFDC882A5D417600C9C1DE /* SpriteFour */,
-				E5354E172A5721120049B870 /* animation0 */,
+				E5354E172A5721120049B870 /* Punnyground */,
 				E5E2A9802A3C691200B42961 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -539,12 +530,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E595B4592A67B1C000B95974 /* LoadScene.swift in Sources */,
-				E5E5378C2A658E070085C417 /* DataSource.swift in Sources */,
 				E595B45C2A68414500B95974 /* Utilities.swift in Sources */,
-				E5E5378E2A6593230085C417 /* Global.swift in Sources */,
 				E5354E1B2A5721120049B870 /* GameScene.swift in Sources */,
-				E5354E192A5721120049B870 /* animation0App.swift in Sources */,
+				E5354E192A5721120049B870 /* PunnygroundApp.swift in Sources */,
 				E5E537902A66CF530085C417 /* GameRole.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
