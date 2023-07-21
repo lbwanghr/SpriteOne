@@ -43,7 +43,7 @@ class GameScene: SKScene {
     }
     
     override func update(_ currentTime: TimeInterval) {
-        role.handleUpdate()
+        role.update()
         
     }
     
@@ -51,18 +51,18 @@ class GameScene: SKScene {
         for touch in touches {
             let location = touch.location(in: self)
             let nodes = self.nodes(at: location)
-            guard let node = nodes.first else { return }
+            guard let node = nodes.first else { continue }
             
             if let name = node.name {
                 if name.hasPrefix("move") {
                     role.facingDirection = Direction(rawValue: Int(name.suffix(1))!)!
-                    role.handleBtnMove()
+                    role.handleMoveBtnTouchBegan()
                     touchedNodes[touch] = node  // Record this node with UITouch key.
                     
                 } else if let actionType = ActionType(rawValue: name){
                     
-                    role.handleActionTouch(name: name)
-                    
+                    role.handleActionBtnTouchBegan(name: name)
+                    touchedNodes[touch] = node
                 } else {
                     
                 }
@@ -74,11 +74,18 @@ class GameScene: SKScene {
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         for touch in touches {
+            if let node = touchedNodes[touch] {
+                if let name = node.name {
+                    if name.hasPrefix("move") {
+                        role.handleMoveBtnTouchEnd()
+                        
+                    }
+                }
+
+            }
             touchedNodes.removeValue(forKey: touch)
-            role.endTouching()
             
         }
-
         
     }
     
