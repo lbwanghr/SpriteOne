@@ -29,6 +29,12 @@
 		E5E537882A5EB4820085C417 /* zap.wav in Resources */ = {isa = PBXBuildFile; fileRef = E5E537872A5EB4820085C417 /* zap.wav */; };
 		E5E5378A2A5EB4CE0085C417 /* smart-bomb.wav in Resources */ = {isa = PBXBuildFile; fileRef = E5E537892A5EB4CE0085C417 /* smart-bomb.wav */; };
 		E5E537902A66CF530085C417 /* GameRole.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E5378F2A66CF530085C417 /* GameRole.swift */; };
+		E5E96FF02A6CECFB006AF6AA /* Magic0.sks in Resources */ = {isa = PBXBuildFile; fileRef = E5E96FEF2A6CECFB006AF6AA /* Magic0.sks */; };
+		E5E96FFC2A6D55FA006AF6AA /* physics1_10App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E96FFB2A6D55FA006AF6AA /* physics1_10App.swift */; };
+		E5E96FFE2A6D55FA006AF6AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E96FFD2A6D55FA006AF6AA /* ContentView.swift */; };
+		E5E970002A6D55FD006AF6AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5E96FFF2A6D55FD006AF6AA /* Assets.xcassets */; };
+		E5E970032A6D55FD006AF6AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5E970022A6D55FD006AF6AA /* Preview Assets.xcassets */; };
+		E5E970072A6D560B006AF6AA /* PlaneScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E96FF12A6D3FBC006AF6AA /* PlaneScene.swift */; };
 		E5EC6F7B2A5ACFB200DCBD8F /* SpriteTwoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EC6F7A2A5ACFB200DCBD8F /* SpriteTwoApp.swift */; };
 		E5EC6F7D2A5ACFB200DCBD8F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EC6F7C2A5ACFB200DCBD8F /* ContentView.swift */; };
 		E5EC6F7F2A5ACFB500DCBD8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5EC6F7E2A5ACFB500DCBD8F /* Assets.xcassets */; };
@@ -79,7 +85,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		E5354E162A5721120049B870 /* animation0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = animation0.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5354E162A5721120049B870 /* Punnyground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Punnyground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5354E182A5721120049B870 /* PunnygroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunnygroundApp.swift; sourceTree = "<group>"; };
 		E5354E1A2A5721120049B870 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		E5354E1C2A5721130049B870 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -97,6 +103,13 @@
 		E5E537872A5EB4820085C417 /* zap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = zap.wav; sourceTree = "<group>"; };
 		E5E537892A5EB4CE0085C417 /* smart-bomb.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "smart-bomb.wav"; sourceTree = "<group>"; };
 		E5E5378F2A66CF530085C417 /* GameRole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRole.swift; sourceTree = "<group>"; };
+		E5E96FEF2A6CECFB006AF6AA /* Magic0.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Magic0.sks; sourceTree = "<group>"; };
+		E5E96FF12A6D3FBC006AF6AA /* PlaneScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaneScene.swift; sourceTree = "<group>"; };
+		E5E96FF92A6D55FA006AF6AA /* physics1-10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "physics1-10.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5E96FFB2A6D55FA006AF6AA /* physics1_10App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = physics1_10App.swift; sourceTree = "<group>"; };
+		E5E96FFD2A6D55FA006AF6AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E5E96FFF2A6D55FD006AF6AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E5E970022A6D55FD006AF6AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E5EC6F782A5ACFB200DCBD8F /* SpriteTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpriteTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5EC6F7A2A5ACFB200DCBD8F /* SpriteTwoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteTwoApp.swift; sourceTree = "<group>"; };
 		E5EC6F7C2A5ACFB200DCBD8F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -147,6 +160,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E5E96FF62A6D55FA006AF6AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E5EC6F752A5ACFB200DCBD8F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -175,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				E5354E182A5721120049B870 /* PunnygroundApp.swift */,
+				E5E96FEF2A6CECFB006AF6AA /* Magic0.sks */,
 				E5354E1A2A5721120049B870 /* GameScene.swift */,
 				E5E5378F2A66CF530085C417 /* GameRole.swift */,
 				E595B45B2A68414500B95974 /* Utilities.swift */,
@@ -190,6 +211,7 @@
 				E5EC6F792A5ACFB200DCBD8F /* SpriteTwo */,
 				E5FFDC6C2A5B9BCE00C9C1DE /* SpriteThree */,
 				E5FFDC882A5D417600C9C1DE /* SpriteFour */,
+				E5E96FFA2A6D55FA006AF6AA /* physics1-10 */,
 				E5354E172A5721120049B870 /* Punnyground */,
 				E5E2A9802A3C691200B42961 /* Products */,
 			);
@@ -200,10 +222,11 @@
 			children = (
 				E5E2A97F2A3C691200B42961 /* SpriteOne.app */,
 				E5AD0F632A4DDB7F00A14FE2 /* SpriteOneW Watch App.app */,
-				E5354E162A5721120049B870 /* animation0.app */,
+				E5354E162A5721120049B870 /* Punnyground.app */,
 				E5EC6F782A5ACFB200DCBD8F /* SpriteTwo.app */,
 				E5FFDC6B2A5B9BCE00C9C1DE /* SpriteThree.app */,
 				E5FFDC872A5D417600C9C1DE /* SpriteFour.app */,
+				E5E96FF92A6D55FA006AF6AA /* physics1-10.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -221,6 +244,26 @@
 				E552DE2C2A3DE3E00079D370 /* explosion.wav */,
 			);
 			path = SpriteOne;
+			sourceTree = "<group>";
+		};
+		E5E96FFA2A6D55FA006AF6AA /* physics1-10 */ = {
+			isa = PBXGroup;
+			children = (
+				E5E96FF12A6D3FBC006AF6AA /* PlaneScene.swift */,
+				E5E96FFB2A6D55FA006AF6AA /* physics1_10App.swift */,
+				E5E96FFD2A6D55FA006AF6AA /* ContentView.swift */,
+				E5E96FFF2A6D55FD006AF6AA /* Assets.xcassets */,
+				E5E970012A6D55FD006AF6AA /* Preview Content */,
+			);
+			path = "physics1-10";
+			sourceTree = "<group>";
+		};
+		E5E970012A6D55FD006AF6AA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E5E970022A6D55FD006AF6AA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		E5EC6F792A5ACFB200DCBD8F /* SpriteTwo */ = {
@@ -296,9 +339,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E5354E152A5721120049B870 /* animation0 */ = {
+		E5354E152A5721120049B870 /* Punnyground */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E5354E232A5721130049B870 /* Build configuration list for PBXNativeTarget "animation0" */;
+			buildConfigurationList = E5354E232A5721130049B870 /* Build configuration list for PBXNativeTarget "Punnyground" */;
 			buildPhases = (
 				E5354E122A5721120049B870 /* Sources */,
 				E5354E132A5721120049B870 /* Frameworks */,
@@ -308,9 +351,9 @@
 			);
 			dependencies = (
 			);
-			name = animation0;
+			name = Punnyground;
 			productName = animation0;
-			productReference = E5354E162A5721120049B870 /* animation0.app */;
+			productReference = E5354E162A5721120049B870 /* Punnyground.app */;
 			productType = "com.apple.product-type.application";
 		};
 		E5AD0F622A4DDB7F00A14FE2 /* SpriteOneW Watch App */ = {
@@ -347,6 +390,23 @@
 			name = SpriteOne;
 			productName = SpriteOne;
 			productReference = E5E2A97F2A3C691200B42961 /* SpriteOne.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E5E96FF82A6D55FA006AF6AA /* physics1-10 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5E970042A6D55FD006AF6AA /* Build configuration list for PBXNativeTarget "physics1-10" */;
+			buildPhases = (
+				E5E96FF52A6D55FA006AF6AA /* Sources */,
+				E5E96FF62A6D55FA006AF6AA /* Frameworks */,
+				E5E96FF72A6D55FA006AF6AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "physics1-10";
+			productName = "physics1-10";
+			productReference = E5E96FF92A6D55FA006AF6AA /* physics1-10.app */;
 			productType = "com.apple.product-type.application";
 		};
 		E5EC6F772A5ACFB200DCBD8F /* SpriteTwo */ = {
@@ -419,6 +479,9 @@
 					E5E2A97E2A3C691200B42961 = {
 						CreatedOnToolsVersion = 15.0;
 					};
+					E5E96FF82A6D55FA006AF6AA = {
+						CreatedOnToolsVersion = 15.0;
+					};
 					E5EC6F772A5ACFB200DCBD8F = {
 						CreatedOnToolsVersion = 15.0;
 					};
@@ -445,10 +508,11 @@
 			targets = (
 				E5E2A97E2A3C691200B42961 /* SpriteOne */,
 				E5AD0F622A4DDB7F00A14FE2 /* SpriteOneW Watch App */,
-				E5354E152A5721120049B870 /* animation0 */,
 				E5EC6F772A5ACFB200DCBD8F /* SpriteTwo */,
 				E5FFDC6A2A5B9BCE00C9C1DE /* SpriteThree */,
 				E5FFDC862A5D417600C9C1DE /* SpriteFour */,
+				E5354E152A5721120049B870 /* Punnyground */,
+				E5E96FF82A6D55FA006AF6AA /* physics1-10 */,
 			);
 		};
 /* End PBXProject section */
@@ -458,6 +522,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5E96FF02A6CECFB006AF6AA /* Magic0.sks in Resources */,
 				E5354E1D2A5721130049B870 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,6 +548,15 @@
 				E552DE2F2A3DE6170079D370 /* Explosion.sks in Resources */,
 				E552DE2D2A3DE3E00079D370 /* explosion.wav in Resources */,
 				E5AD0F822A4DE2E100A14FE2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5E96FF72A6D55FA006AF6AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5E970032A6D55FD006AF6AA /* Preview Assets.xcassets in Resources */,
+				E5E970002A6D55FD006AF6AA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,6 +626,16 @@
 			files = (
 				E5E2A9852A3C691200B42961 /* ContentView.swift in Sources */,
 				E5E2A9832A3C691200B42961 /* SpriteOneApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5E96FF52A6D55FA006AF6AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5E970072A6D560B006AF6AA /* PlaneScene.swift in Sources */,
+				E5E96FFE2A6D55FA006AF6AA /* ContentView.swift in Sources */,
+				E5E96FFC2A6D55FA006AF6AA /* physics1_10App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -667,7 +751,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconW;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -699,7 +783,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconW;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -931,6 +1015,69 @@
 			};
 			name = Release;
 		};
+		E5E970052A6D55FD006AF6AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"physics1-10/Preview Content\"";
+				DEVELOPMENT_TEAM = UCV96WLDG4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeRight;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "top.mightycounty.physics1-10";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E5E970062A6D55FD006AF6AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"physics1-10/Preview Content\"";
+				DEVELOPMENT_TEAM = UCV96WLDG4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeRight;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "top.mightycounty.physics1-10";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		E5EC6F832A5ACFB500DCBD8F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1147,7 +1294,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E5354E232A5721130049B870 /* Build configuration list for PBXNativeTarget "animation0" */ = {
+		E5354E232A5721130049B870 /* Build configuration list for PBXNativeTarget "Punnyground" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E5354E212A5721130049B870 /* Debug */,
@@ -1179,6 +1326,15 @@
 			buildConfigurations = (
 				E5E2A98F2A3C691200B42961 /* Debug */,
 				E5E2A9902A3C691200B42961 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5E970042A6D55FD006AF6AA /* Build configuration list for PBXNativeTarget "physics1-10" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5E970052A6D55FD006AF6AA /* Debug */,
+				E5E970062A6D55FD006AF6AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
