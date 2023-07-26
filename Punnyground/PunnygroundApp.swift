@@ -31,11 +31,14 @@ let animations = resolveRawAnimationPics()
 let gameScene = GameScene()
 
 // Global configurations
-let resolution = CGSize(width: 384, height: 256)
-let btnSize = CGSize(width: 28, height: 28)
+let resolution = CGSize(width: 512, height: 288)
+let bgSize = CGSize(width: 544, height: 320)
+let btnSize = CGSize(width: 32, height: 32)
 let btnInterval = CGFloat(40)
-let moveBtnPosition = CGPoint(x: 0, y: -100)
-let actionBtnPosition = CGPoint(x: 0, y: -64)
+let wheelPosition = CGPoint(x: 56, y: 48)
+let wheelRadius:(bigCircle: CGFloat, smallCircle: CGFloat) = (36, 14)
+let actionBtnPosition = CGPoint(x: 320, y: 48)
+let roleStartPoint = CGPoint(x: resolution.width / 2, y: resolution.height / 2)
 let timePerFrame = 0.1
 let moveDuration = 0.4
 let moveSpeed = 5.0
@@ -43,15 +46,4 @@ let numberOfTree = 10
 let btnAlpha = 0.6
 
 //let characterNames = ["Archer-Green", "Archer-Purple", "Character-Base", "Mage-Cyan", "Mage-Red", "Soldier-Blue", "Soldier-Red", "Soldier-Yellow", "Warrior-Blue", "Warrior-Red", "Human-Soldier-Cyan", "Human-Soldier-Red", "Human-Worker-Cyan", "Human-Worker-Red", "Orc-Grunt", "Orc-Peon-Cyan", "Orc-Peon-Red", "Orc-Soldier-Cyan", "Orc-Soldier-Red"]
-let characterNames = ["Archer-Green", "Orc-Soldier-Red"]
-
-let moveVectors: [Direction: CGVector] = [
-    .southwest: CGVector(dx: -sqrt(moveSpeed), dy: -sqrt(moveSpeed)),
-    .west: CGVector(dx: -moveSpeed, dy: 0),
-    .northwest: CGVector(dx: -sqrt(moveSpeed), dy: sqrt(moveSpeed)),
-    .north: CGVector(dx: 0, dy: moveSpeed),
-    .northeast: CGVector(dx: sqrt(moveSpeed), dy: sqrt(moveSpeed)),
-    .east: CGVector(dx: moveSpeed, dy: 0),
-    .southeast: CGVector(dx: sqrt(moveSpeed), dy: -sqrt(moveSpeed)),
-    .south: CGVector(dx: 0, dy: -moveSpeed)
-]
+let roleTypeNames = ["Archer-Green", "Orc-Soldier-Red"]
