@@ -14,8 +14,13 @@
 		E552DE2D2A3DE3E00079D370 /* explosion.wav in Resources */ = {isa = PBXBuildFile; fileRef = E552DE2C2A3DE3E00079D370 /* explosion.wav */; };
 		E552DE2F2A3DE6170079D370 /* Explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = E552DE2E2A3DE6170079D370 /* Explosion.sks */; };
 		E57CFF2C2A3CB4C900E062CE /* SpaceDust.sks in Resources */ = {isa = PBXBuildFile; fileRef = E57CFF2B2A3CB4C900E062CE /* SpaceDust.sks */; };
-		E595B45C2A68414500B95974 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E595B45B2A68414500B95974 /* Utilities.swift */; };
-		E5AD0F702A4DDB8000A14FE2 /* SpriteOneW Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E5AD0F632A4DDB7F00A14FE2 /* SpriteOneW Watch App.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E589DF772A75687000F4C9E6 /* CGPoint+Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E589DF762A75687000F4C9E6 /* CGPoint+Operations.swift */; };
+		E589DF792A75687F00F4C9E6 /* CGVector+Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E589DF782A75687F00F4C9E6 /* CGVector+Operations.swift */; };
+		E589DF7C2A756F6200F4C9E6 /* EnumAndAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = E589DF7B2A756F6200F4C9E6 /* EnumAndAlias.swift */; };
+		E589DF7F2A75706300F4C9E6 /* TimeStamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E589DF7E2A75706300F4C9E6 /* TimeStamp.swift */; };
+		E589DF812A75716C00F4C9E6 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = E589DF802A75716C00F4C9E6 /* Global.swift */; };
+		E595B45C2A68414500B95974 /* ResolveRawPic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E595B45B2A68414500B95974 /* ResolveRawPic.swift */; };
+		E5AD0F702A4DDB8000A14FE2 /* SpriteOneW Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E5AD0F632A4DDB7F00A14FE2 /* SpriteOneW Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E5AD0F752A4DDBB900A14FE2 /* SpaceDust.sks in Resources */ = {isa = PBXBuildFile; fileRef = E57CFF2B2A3CB4C900E062CE /* SpaceDust.sks */; };
 		E5AD0F7A2A4DDE0000A14FE2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E2A9842A3C691200B42961 /* ContentView.swift */; };
 		E5AD0F7B2A4DDE0C00A14FE2 /* SpriteOneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E2A9822A3C691200B42961 /* SpriteOneApp.swift */; };
@@ -93,7 +98,12 @@
 		E552DE2C2A3DE3E00079D370 /* explosion.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = explosion.wav; sourceTree = "<group>"; };
 		E552DE2E2A3DE6170079D370 /* Explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Explosion.sks; sourceTree = "<group>"; };
 		E57CFF2B2A3CB4C900E062CE /* SpaceDust.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SpaceDust.sks; sourceTree = "<group>"; };
-		E595B45B2A68414500B95974 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		E589DF762A75687000F4C9E6 /* CGPoint+Operations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Operations.swift"; sourceTree = "<group>"; };
+		E589DF782A75687F00F4C9E6 /* CGVector+Operations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGVector+Operations.swift"; sourceTree = "<group>"; };
+		E589DF7B2A756F6200F4C9E6 /* EnumAndAlias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumAndAlias.swift; sourceTree = "<group>"; };
+		E589DF7E2A75706300F4C9E6 /* TimeStamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStamp.swift; sourceTree = "<group>"; };
+		E589DF802A75716C00F4C9E6 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		E595B45B2A68414500B95974 /* ResolveRawPic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResolveRawPic.swift; sourceTree = "<group>"; };
 		E5AD0F632A4DDB7F00A14FE2 /* SpriteOneW Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SpriteOneW Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5E2A97F2A3C691200B42961 /* SpriteOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpriteOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5E2A9822A3C691200B42961 /* SpriteOneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteOneApp.swift; sourceTree = "<group>"; };
@@ -195,13 +205,42 @@
 			isa = PBXGroup;
 			children = (
 				E5354E182A5721120049B870 /* PunnygroundApp.swift */,
-				E5E96FEF2A6CECFB006AF6AA /* Magic0.sks */,
 				E5354E1A2A5721120049B870 /* GameScene.swift */,
 				E5E5378F2A66CF530085C417 /* GameRole.swift */,
-				E595B45B2A68414500B95974 /* Utilities.swift */,
+				E589DF802A75716C00F4C9E6 /* Global.swift */,
 				E5354E1C2A5721130049B870 /* Assets.xcassets */,
+				E589DF7A2A756BF700F4C9E6 /* Particles */,
+				E589DF7D2A75704F00F4C9E6 /* Tools */,
+				E589DF752A75685800F4C9E6 /* Extensions */,
 			);
 			path = Punnyground;
+			sourceTree = "<group>";
+		};
+		E589DF752A75685800F4C9E6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E589DF762A75687000F4C9E6 /* CGPoint+Operations.swift */,
+				E589DF782A75687F00F4C9E6 /* CGVector+Operations.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E589DF7A2A756BF700F4C9E6 /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				E5E96FEF2A6CECFB006AF6AA /* Magic0.sks */,
+			);
+			path = Particles;
+			sourceTree = "<group>";
+		};
+		E589DF7D2A75704F00F4C9E6 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				E589DF7B2A756F6200F4C9E6 /* EnumAndAlias.swift */,
+				E595B45B2A68414500B95974 /* ResolveRawPic.swift */,
+				E589DF7E2A75706300F4C9E6 /* TimeStamp.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		E5E2A9762A3C691200B42961 = {
@@ -511,8 +550,8 @@
 				E5EC6F772A5ACFB200DCBD8F /* SpriteTwo */,
 				E5FFDC6A2A5B9BCE00C9C1DE /* SpriteThree */,
 				E5FFDC862A5D417600C9C1DE /* SpriteFour */,
-				E5354E152A5721120049B870 /* Punnyground */,
 				E5E96FF82A6D55FA006AF6AA /* physics1-10 */,
+				E5354E152A5721120049B870 /* Punnyground */,
 			);
 		};
 /* End PBXProject section */
@@ -604,10 +643,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E595B45C2A68414500B95974 /* Utilities.swift in Sources */,
+				E589DF7C2A756F6200F4C9E6 /* EnumAndAlias.swift in Sources */,
+				E595B45C2A68414500B95974 /* ResolveRawPic.swift in Sources */,
+				E589DF812A75716C00F4C9E6 /* Global.swift in Sources */,
 				E5354E1B2A5721120049B870 /* GameScene.swift in Sources */,
+				E589DF792A75687F00F4C9E6 /* CGVector+Operations.swift in Sources */,
 				E5354E192A5721120049B870 /* PunnygroundApp.swift in Sources */,
 				E5E537902A66CF530085C417 /* GameRole.swift in Sources */,
+				E589DF7F2A75706300F4C9E6 /* TimeStamp.swift in Sources */,
+				E589DF772A75687000F4C9E6 /* CGPoint+Operations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -674,7 +718,6 @@
 /* Begin PBXTargetDependency section */
 		E5AD0F6F2A4DDB8000A14FE2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			platformFilter = ios;
 			target = E5AD0F622A4DDB7F00A14FE2 /* SpriteOneW Watch App */;
 			targetProxy = E5AD0F6E2A4DDB8000A14FE2 /* PBXContainerItemProxy */;
 		};
@@ -706,10 +749,11 @@
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -738,10 +782,11 @@
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -966,7 +1011,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1011,7 +1056,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

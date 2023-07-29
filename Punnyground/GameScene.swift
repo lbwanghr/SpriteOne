@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  animation0
-//
-//  Created by Haoran Wang on 2023/7/7.
-//
-
 import SpriteKit
 
 class GameScene: SKScene {
@@ -13,7 +6,6 @@ class GameScene: SKScene {
     var moveWheel = SKNode()
     var actionBtnSet = SKNode()
     var touchedNodes = [UITouch: SKNode]() // Record every touch which binding to a node.
-    var lastTime: TimeInterval = .zero
     
     override func sceneDidLoad() {
         size = resolution;                          scaleMode = .aspectFit
@@ -27,13 +19,11 @@ class GameScene: SKScene {
     override func didMove(to view: SKView) { self.view?.isMultipleTouchEnabled = true }
     
     override func update(_ currentTime: TimeInterval) {
-        if lastTime == .zero { lastTime = currentTime; return }
         if !role.isPlaying { role.texture = role.idleTexture }
         
         fixReBoundAfterHitTree()
         fixScreenOffset()
 
-        lastTime = currentTime
         role.lastPosition = role.position
     }
     
@@ -81,7 +71,7 @@ class GameScene: SKScene {
 //                print("\(delta.debugDescription)")
                 let absoluteDelta = sqrt(delta.x * delta.x + delta.y * delta.y)
                 // when touch exceed bigCircle area, limit it to this area
-                var limitedDelta = absoluteDelta > r ? delta * (r / absoluteDelta) : delta
+                let limitedDelta = absoluteDelta > r ? delta * (r / absoluteDelta) : delta
                 touchedNodes[touch]!.position = wheelPosition + limitedDelta
                 let velocity = CGVector(dx: limitedDelta.x, dy: limitedDelta.y)
                 role.physicsBody?.velocity = velocity
@@ -195,15 +185,15 @@ class GameScene: SKScene {
         if role.position.y < rminy { role.position.y = rminy }
         else if role.position.y > rmaxy { role.position.y = rmaxy }
         
-        let offset = role.position - role.lastPosition
-        let roleGlobalPosition = role.position - bg.position
-        
         let (bgMinX, bgMaxX, bgMinY, bgMaxY) = (-w1 + w2, 0.0, -h1 + h2, 0.0)
         if bg.position.x < bgMinX { bg.position.x = bgMinX }
         else if bg.position.x > bgMaxX { bg.position.x = bgMaxX }
         if bg.position.y < bgMinY { bg.position.y = bgMinY }
         else if bg.position.y > bgMaxY { bg.position.y = bgMaxY }
         
+        let offset = role.position - role.lastPosition
+        let roleGlobalPosition = role.position - bg.position
+    
         let (rgx, rgy) = (roleGlobalPosition.x, roleGlobalPosition.y)
         let (xflag1, xflag2, yflag1, yflag2) = (w2 / 2, w1 - w2 / 2, h2 / 2, h1 - h2 / 2)
         enum Region { case r1, r2, r3, r4, r5, r6, r7, r8, r9 }

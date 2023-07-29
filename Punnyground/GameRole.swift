@@ -1,10 +1,3 @@
-//
-//  GameRole.swift
-//  animation0
-//
-//  Created by Haoran Wang on 2023/7/18.
-//
-
 import SpriteKit
 
 class GameRole: SKSpriteNode {
