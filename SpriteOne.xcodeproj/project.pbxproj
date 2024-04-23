@@ -38,12 +38,10 @@
 		E5E96FFC2A6D55FA006AF6AA /* physics1_10App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E96FFB2A6D55FA006AF6AA /* physics1_10App.swift */; };
 		E5E96FFE2A6D55FA006AF6AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E96FFD2A6D55FA006AF6AA /* ContentView.swift */; };
 		E5E970002A6D55FD006AF6AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5E96FFF2A6D55FD006AF6AA /* Assets.xcassets */; };
-		E5E970032A6D55FD006AF6AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5E970022A6D55FD006AF6AA /* Preview Assets.xcassets */; };
 		E5E970072A6D560B006AF6AA /* PlaneScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E96FF12A6D3FBC006AF6AA /* PlaneScene.swift */; };
 		E5EC6F7B2A5ACFB200DCBD8F /* SpriteTwoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EC6F7A2A5ACFB200DCBD8F /* SpriteTwoApp.swift */; };
 		E5EC6F7D2A5ACFB200DCBD8F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EC6F7C2A5ACFB200DCBD8F /* ContentView.swift */; };
 		E5EC6F7F2A5ACFB500DCBD8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5EC6F7E2A5ACFB500DCBD8F /* Assets.xcassets */; };
-		E5EC6F822A5ACFB500DCBD8F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5EC6F812A5ACFB500DCBD8F /* Preview Assets.xcassets */; };
 		E5EC6F872A5ACFF100DCBD8F /* GameTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EC6F862A5ACFF100DCBD8F /* GameTwo.swift */; };
 		E5EC6F892A5AE1B300DCBD8F /* correct-1.wav in Resources */ = {isa = PBXBuildFile; fileRef = E5EC6F882A5AE1B300DCBD8F /* correct-1.wav */; };
 		E5EC6F8B2A5AE1E900DCBD8F /* wrong-1.wav in Resources */ = {isa = PBXBuildFile; fileRef = E5EC6F8A2A5AE1E800DCBD8F /* wrong-1.wav */; };
@@ -51,7 +49,6 @@
 		E5FFDC6E2A5B9BCE00C9C1DE /* SpriteThreeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FFDC6D2A5B9BCE00C9C1DE /* SpriteThreeApp.swift */; };
 		E5FFDC702A5B9BCE00C9C1DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FFDC6F2A5B9BCE00C9C1DE /* ContentView.swift */; };
 		E5FFDC722A5B9BD000C9C1DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5FFDC712A5B9BD000C9C1DE /* Assets.xcassets */; };
-		E5FFDC752A5B9BD000C9C1DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5FFDC742A5B9BD000C9C1DE /* Preview Assets.xcassets */; };
 		E5FFDC7A2A5B9BDC00C9C1DE /* GameThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FFDC792A5B9BDC00C9C1DE /* GameThree.swift */; };
 		E5FFDC7C2A5C236900C9C1DE /* Explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = E5FFDC7B2A5C236900C9C1DE /* Explosion.sks */; };
 		E5FFDC7E2A5C285C00C9C1DE /* score.wav in Resources */ = {isa = PBXBuildFile; fileRef = E5FFDC7D2A5C285C00C9C1DE /* score.wav */; };
@@ -60,7 +57,6 @@
 		E5FFDC8A2A5D417600C9C1DE /* SpriteFourApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FFDC892A5D417600C9C1DE /* SpriteFourApp.swift */; };
 		E5FFDC8C2A5D417600C9C1DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FFDC8B2A5D417600C9C1DE /* ContentView.swift */; };
 		E5FFDC8E2A5D417A00C9C1DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5FFDC8D2A5D417A00C9C1DE /* Assets.xcassets */; };
-		E5FFDC912A5D417A00C9C1DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5FFDC902A5D417A00C9C1DE /* Preview Assets.xcassets */; };
 		E5FFDC962A5D418A00C9C1DE /* GameFour.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FFDC952A5D418A00C9C1DE /* GameFour.swift */; };
 		E5FFDC982A5DA84300C9C1DE /* alien-restaurant.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5FFDC972A5DA84300C9C1DE /* alien-restaurant.mp3 */; };
 /* End PBXBuildFile section */
@@ -119,12 +115,10 @@
 		E5E96FFB2A6D55FA006AF6AA /* physics1_10App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = physics1_10App.swift; sourceTree = "<group>"; };
 		E5E96FFD2A6D55FA006AF6AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E5E96FFF2A6D55FD006AF6AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E5E970022A6D55FD006AF6AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E5EC6F782A5ACFB200DCBD8F /* SpriteTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpriteTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5EC6F7A2A5ACFB200DCBD8F /* SpriteTwoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteTwoApp.swift; sourceTree = "<group>"; };
 		E5EC6F7C2A5ACFB200DCBD8F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E5EC6F7E2A5ACFB500DCBD8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E5EC6F812A5ACFB500DCBD8F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E5EC6F862A5ACFF100DCBD8F /* GameTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTwo.swift; sourceTree = "<group>"; };
 		E5EC6F882A5AE1B300DCBD8F /* correct-1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "correct-1.wav"; sourceTree = "<group>"; };
 		E5EC6F8A2A5AE1E800DCBD8F /* wrong-1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "wrong-1.wav"; sourceTree = "<group>"; };
@@ -133,7 +127,6 @@
 		E5FFDC6D2A5B9BCE00C9C1DE /* SpriteThreeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteThreeApp.swift; sourceTree = "<group>"; };
 		E5FFDC6F2A5B9BCE00C9C1DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E5FFDC712A5B9BD000C9C1DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E5FFDC742A5B9BD000C9C1DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E5FFDC792A5B9BDC00C9C1DE /* GameThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameThree.swift; sourceTree = "<group>"; };
 		E5FFDC7B2A5C236900C9C1DE /* Explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Explosion.sks; sourceTree = "<group>"; };
 		E5FFDC7D2A5C285C00C9C1DE /* score.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = score.wav; sourceTree = "<group>"; };
@@ -143,7 +136,6 @@
 		E5FFDC892A5D417600C9C1DE /* SpriteFourApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteFourApp.swift; sourceTree = "<group>"; };
 		E5FFDC8B2A5D417600C9C1DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E5FFDC8D2A5D417A00C9C1DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E5FFDC902A5D417A00C9C1DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E5FFDC952A5D418A00C9C1DE /* GameFour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameFour.swift; sourceTree = "<group>"; };
 		E5FFDC972A5DA84300C9C1DE /* alien-restaurant.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "alien-restaurant.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -292,17 +284,8 @@
 				E5E96FFB2A6D55FA006AF6AA /* physics1_10App.swift */,
 				E5E96FFD2A6D55FA006AF6AA /* ContentView.swift */,
 				E5E96FFF2A6D55FD006AF6AA /* Assets.xcassets */,
-				E5E970012A6D55FD006AF6AA /* Preview Content */,
 			);
 			path = "physics1-10";
-			sourceTree = "<group>";
-		};
-		E5E970012A6D55FD006AF6AA /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				E5E970022A6D55FD006AF6AA /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		E5EC6F792A5ACFB200DCBD8F /* SpriteTwo */ = {
@@ -315,17 +298,8 @@
 				E5EC6F8A2A5AE1E800DCBD8F /* wrong-1.wav */,
 				E5EC6F7E2A5ACFB500DCBD8F /* Assets.xcassets */,
 				E5EC6F8C2A5AECD200DCBD8F /* truth-in-the-stones.mp3 */,
-				E5EC6F802A5ACFB500DCBD8F /* Preview Content */,
 			);
 			path = SpriteTwo;
-			sourceTree = "<group>";
-		};
-		E5EC6F802A5ACFB500DCBD8F /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				E5EC6F812A5ACFB500DCBD8F /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		E5FFDC6C2A5B9BCE00C9C1DE /* SpriteThree */ = {
@@ -339,17 +313,8 @@
 				E5FFDC7D2A5C285C00C9C1DE /* score.wav */,
 				E5FFDC7F2A5C286B00C9C1DE /* explosion.wav */,
 				E5FFDC812A5C288700C9C1DE /* the-hero.mp3 */,
-				E5FFDC732A5B9BD000C9C1DE /* Preview Content */,
 			);
 			path = SpriteThree;
-			sourceTree = "<group>";
-		};
-		E5FFDC732A5B9BD000C9C1DE /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				E5FFDC742A5B9BD000C9C1DE /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		E5FFDC882A5D417600C9C1DE /* SpriteFour */ = {
@@ -362,17 +327,8 @@
 				E5E537892A5EB4CE0085C417 /* smart-bomb.wav */,
 				E5E537872A5EB4820085C417 /* zap.wav */,
 				E5FFDC972A5DA84300C9C1DE /* alien-restaurant.mp3 */,
-				E5FFDC8F2A5D417A00C9C1DE /* Preview Content */,
 			);
 			path = SpriteFour;
-			sourceTree = "<group>";
-		};
-		E5FFDC8F2A5D417A00C9C1DE /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				E5FFDC902A5D417A00C9C1DE /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -507,7 +463,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					E5354E152A5721120049B870 = {
 						CreatedOnToolsVersion = 15.0;
@@ -594,7 +550,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5E970032A6D55FD006AF6AA /* Preview Assets.xcassets in Resources */,
 				E5E970002A6D55FD006AF6AA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -604,7 +559,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5EC6F892A5AE1B300DCBD8F /* correct-1.wav in Resources */,
-				E5EC6F822A5ACFB500DCBD8F /* Preview Assets.xcassets in Resources */,
 				E5EC6F8D2A5AECD200DCBD8F /* truth-in-the-stones.mp3 in Resources */,
 				E5EC6F8B2A5AE1E900DCBD8F /* wrong-1.wav in Resources */,
 				E5EC6F7F2A5ACFB500DCBD8F /* Assets.xcassets in Resources */,
@@ -616,7 +570,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5FFDC802A5C286B00C9C1DE /* explosion.wav in Resources */,
-				E5FFDC752A5B9BD000C9C1DE /* Preview Assets.xcassets in Resources */,
 				E5FFDC7E2A5C285C00C9C1DE /* score.wav in Resources */,
 				E5FFDC722A5B9BD000C9C1DE /* Assets.xcassets in Resources */,
 				E5FFDC822A5C288700C9C1DE /* the-hero.mp3 in Resources */,
@@ -628,7 +581,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5FFDC912A5D417A00C9C1DE /* Preview Assets.xcassets in Resources */,
 				E5E5378A2A5EB4CE0085C417 /* smart-bomb.wav in Resources */,
 				E5FFDC8E2A5D417A00C9C1DE /* Assets.xcassets in Resources */,
 				E5E537882A5EB4820085C417 /* zap.wav in Resources */,
@@ -890,6 +842,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -951,6 +904,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -981,6 +935,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = UCV96WLDG4;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -1026,6 +981,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = UCV96WLDG4;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -1068,7 +1024,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"physics1-10/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = UCV96WLDG4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1099,7 +1055,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"physics1-10/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = UCV96WLDG4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1130,7 +1086,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SpriteTwo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = UCV96WLDG4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1165,7 +1121,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SpriteTwo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = UCV96WLDG4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1201,7 +1157,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SpriteThree/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = UCV96WLDG4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1236,7 +1192,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SpriteThree/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = UCV96WLDG4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1272,7 +1228,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SpriteFour/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = UCV96WLDG4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1307,7 +1263,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SpriteFour/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = UCV96WLDG4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
